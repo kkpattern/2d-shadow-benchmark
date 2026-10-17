@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101f2b" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23e7b674' d='M16 1 31 16 16 31 1 16z'/%3E%3Cpath fill='%23101f2b' d='m16 6 10 10-10 10L6 16z'/%3E%3C/svg%3E" />
+    <meta name="description" content="An interactive isometric town with screen-space raymarched sunlight, reconstructed in Blender and rendered with Three.js." />
+    <title>Isometric Light — a shadow study</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="masthead">
+        <a class="wordmark" href="./" aria-label="Isometric Light home"><span class="brand-icon">◈</span> ISOMETRIC<span class="wordmark-light"> / LIGHT</span></a>
+        <span class="masthead-note">AN INTERACTIVE RENDERING STUDY</span>
+        <a class="source-link" href="/docs/SHADOW_RESEARCH.md" target="_blank">Research notes <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <main>
+        <div class="intro">
+          <div><div class="eyebrow"><span></span> STUDY 001 · SCREEN-SPACE SHADOWS</div><h1>A little town.<br class="mobile-break" /> A moving sun.</h1></div>
+          <p>Original sprites, reconstructed depth.<br />Explore how light brings a flat world to life.</p>
+        </div>
+
+        <div class="workbench">
+          <section class="viewport" aria-label="Interactive isometric scene">
+            <div class="scene-topline"><span class="live-label"><i></i> <span id="scene-status">BUILDING THE TOWN</span></span><span class="scene-index">ORTHOGRAPHIC / 918 × 515</span></div>
+            <div class="canvas-wrap" id="canvas-wrap">
+              <canvas id="scene" aria-label="Isometric town with dynamic sunlight and shadows"></canvas>
+              <img id="reference-image" src="/sample.png" alt="Original reference scene" />
+              <div class="compare-line" id="compare-line"><span>↔</span></div>
+              <div class="loading" id="loading"><span class="loader"></span><span>Preparing the light study…</span></div>
+              <div class="scene-error" id="scene-error" role="alert" hidden></div>
+            </div>
+            <div class="scene-bottomline"><span id="view-caption">LIVE RECONSTRUCTION</span><span id="render-stats">THREE.JS · WEBGL 2</span></div>
+          </section>
+
+          <aside class="controls" aria-label="Lighting controls">
+            <div class="panel-heading"><div><span class="eyebrow">THE LIGHT SOURCE</span><h2>Make it your hour.</h2></div><button class="icon-button" id="reset" title="Reset lighting" aria-label="Reset lighting">↺</button></div>
+            <div class="sun-path"><svg viewBox="0 0 260 106" aria-hidden="true"><defs><linearGradient id="arcGradient"><stop stop-color="#8da7b1"/><stop offset=".5" stop-color="#e6b972"/><stop offset="1" stop-color="#8da7b1"/></linearGradient></defs><path d="M 22,86 A 108,72 0 0 1 238,86" fill="none" stroke="url(#arcGradient)" stroke-width="1" stroke-dasharray="3 5"/><path d="M22 86H238" stroke="#34434b"/><g id="sun-glyph"><circle r="12" fill="#e9b873" fill-opacity=".10"/><circle r="5" fill="#e9b873"/><path d="M0 -16v4M0 12v4M-16 0h4M12 0h4M-11 -11l3 3M8 8l3 3M11 -11l-3 3M-8 8l-3 3" stroke="#e9b873"/></g></svg><div class="sun-path-labels"><span>MORNING</span><span>EVENING</span></div></div>
+            <div class="control-group"><div class="control-label"><label for="azimuth">Sun direction</label><output id="azimuth-value" for="azimuth">135°</output></div><input id="azimuth" type="range" min="0" max="360" step="1" value="135" /><div class="range-ends"><span>0°</span><span>360°</span></div></div>
+            <div class="control-group"><div class="control-label"><label for="elevation">Sun elevation</label><output id="elevation-value" for="elevation">42°</output></div><input id="elevation" type="range" min="12" max="85" step="1" value="42" /></div>
+            <div class="control-group"><div class="control-label"><label for="softness">Shadow softness</label><output id="softness-value" for="softness">2.0°</output></div><input id="softness" type="range" min="0" max="6" step="0.1" value="2" /></div>
+            <div class="control-group"><div class="control-label"><label for="strength">Shadow strength</label><output id="strength-value" for="strength">60%</output></div><input id="strength" type="range" min="0" max="90" step="1" value="60" /></div>
+            <div class="divider"></div>
+            <div class="toggle-row"><div><label for="animate">Let the sun wander</label><span>A slow orbit through the day</span></div><button class="switch" id="animate" role="switch" aria-checked="false" aria-label="Animate sunlight"><span></span></button></div>
+            <button id="shadows" class="shadow-button" aria-pressed="true"><span class="button-dot"></span><span id="shadow-button-label">Shadows enabled</span><span class="keycap">S</span></button>
+            <div class="panel-footnote"><span>↳</span> Try a low sun for longer shadows.</div>
+          </aside>
+        </div>
+
+        <div class="toolbar">
+          <div class="view-selector" role="group" aria-label="Rendering view"><button class="active" data-view="0">Scene</button><button data-view="1">Depth</button><button data-view="2">Thickness</button><button data-view="3">Normals</button><button data-view="4">Shadows</button></div>
+          <div class="compare-control"><button id="compare" aria-pressed="false"><span class="compare-icon">◧</span> Compare reference</button><input id="comparison" type="range" min="0" max="100" value="50" aria-label="Reference comparison position" hidden /></div>
+          <button class="export-button" id="export" aria-label="Save scene as PNG">Save frame <span aria-hidden="true">↓</span></button>
+        </div>
+        <div class="view-description" id="view-description">Light is traced through the town’s depth and thickness, one screen-space ray at a time.</div>
+
+        <footer><div><span class="footer-mark">◈</span> 2D ART. 3D UNDERSTANDING.</div><span>Kenney building sprites <span class="footer-separator">/</span> Blender 5.2 <span class="footer-separator">/</span> Three.js</span><span class="keyboard-help">SPACE to animate <span>·</span> S for shadows</span></footer>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

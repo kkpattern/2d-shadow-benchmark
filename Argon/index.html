@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.5D Isometric Screen-Space Volumetric Raymarched Shadows — Three.js</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #141923;
+      color: #e6edf3;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      gap: 16px;
+    }
+
+    .app-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .viewport-wrapper {
+      position: relative;
+      width: 918px;
+      height: 515px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: #3f7cb6;
+    }
+
+    #webgl-canvas {
+      display: block;
+      width: 918px;
+      height: 515px;
+    }
+
+    #loading-status {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(20, 25, 35, 0.78);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      color: #fff;
+    }
+
+    .control-panel {
+      width: 320px;
+      background: #1c2331;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 10px;
+    }
+
+    .panel-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #f0f6fc;
+    }
+
+    .panel-subtitle {
+      font-size: 11px;
+      color: #8b949e;
+      margin-top: 2px;
+    }
+
+    .sun-compass {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #28344a 0%, #161d2a 100%);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .sun-compass::before,
+    .sun-compass::after {
+      content: "";
+      position: absolute;
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .sun-compass::before {
+      width: 100%;
+      height: 1px;
+    }
+    .sun-compass::after {
+      width: 1px;
+      height: 100%;
+    }
+
+    #sun-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #ffdf5d;
+      box-shadow: 0 0 10px #ffdf5d;
+      z-index: 2;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .control-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #c9d1d9;
+      font-weight: 500;
+    }
+
+    .control-val {
+      color: #58a6ff;
+      font-variant-numeric: tabular-nums;
+      font-weight: 600;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: #58a6ff;
+      cursor: pointer;
+    }
+
+    select {
+      width: 100%;
+      background: #121722;
+      color: #e6edf3;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 6px;
+      padding: 6px 8px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .preset-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    .preset-btn {
+      background: #263042;
+      color: #dbe4ee;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 5px;
+      padding: 5px 8px;
+      font-size: 11px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .preset-btn:hover {
+      background: #32415a;
+    }
+
+    .checkbox-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 12px;
+      color: #c9d1d9;
+      padding-top: 2px;
+    }
+
+    .checkbox-row label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    /* Exact 918x515 borderless capture mode when ?ui=0 is set */
+    body.headless-capture {
+      padding: 0;
+      margin: 0;
+      background: #3f7cb6;
+      display: block;
+      overflow: hidden;
+    }
+    body.headless-capture .app-container {
+      display: block;
+    }
+    body.headless-capture .viewport-wrapper {
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      width: 918px;
+      height: 515px;
+    }
+    body.headless-capture .control-panel {
+      display: none !important;
+    }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./node_modules/three/build/three.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="app-container">
+    <div class="viewport-wrapper">
+      <canvas id="webgl-canvas" width="918" height="515"></canvas>
+      <div id="loading-status">Loading 3D G-Buffer Maps (Depth, Thickness, Normal)...</div>
+    </div>
+
+    <div class="control-panel">
+      <div class="panel-header">
+        <div>
+          <div class="panel-title">2.5D Raymarched Shadows</div>
+          <div class="panel-subtitle">Depth + Thickness + Normal G-Buffer</div>
+        </div>
+        <div class="sun-compass" title="Sun Direction">
+          <div id="sun-dot"></div>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="control-label">
+          <span>Render Pass / Buffer</span>
+        </div>
+        <select id="ctrl-mode">
+          <option value="0">0 — Final Shadowed Scene</option>
+          <option value="1">1 — Unshadowed Albedo (sample.png)</option>
+          <option value="2">2 — Raymarched Shadow Mask</option>
+          <option value="3">3 — Unified Front Depth (z_scene)</option>
+          <option value="4">4 — Component Thickness (T)</option>
+          <option value="5">5 — View-Space Normals (N_view)</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <div class="control-label">
+          <span>Sun Azimuth Angle</span>
+          <span id="val-azimuth" class="control-val">-55°</span>
+        </div>
+        <input id="ctrl-azimuth" type="range" min="-180" max="180" step="1" value="-55" />
+      </div>
+
+      <div class="control-group">
+        <div class="control-label">
+          <span>Sun Elevation Angle</span>
+          <span id="val-elevation" class="control-val">38°</span>
+        </div>
+        <input id="ctrl-elevation" type="range" min="14" max="82" step="1" value="38" />
+      </div>
+
+      <div class="control-group">
+        <div class="control-label">
+          <span>Shadow Intensity</span>
+          <span id="val-intensity" class="control-val">0.80</span>
+        </div>
+        <input id="ctrl-intensity" type="range" min="0.0" max="1.0" step="0.02" value="0.80" />
+      </div>
+
+      <div class="control-group">
+        <div class="control-label">
+          <span>Penumbra Softness</span>
+          <span id="val-softness" class="control-val">1.15</span>
+        </div>
+        <input id="ctrl-softness" type="range" min="0.0" max="3.5" step="0.05" value="1.15" />
+      </div>
+
+      <div class="control-group">
+        <div class="control-label">
+          <span>Normal-Map N·L Contrast</span>
+          <span id="val-normal-shading" class="control-val">0.06</span>
+        </div>
+        <input id="ctrl-normal-shading" type="range" min="0.0" max="0.25" step="0.01" value="0.06" />
+      </div>
+
+      <div class="control-group">
+        <div class="control-label"><span>Lighting Presets</span></div>
+        <div class="preset-grid">
+          <button class="preset-btn" data-preset="-55,38,1.15">Morning (Top-Left)</button>
+          <button class="preset-btn" data-preset="58,36,1.15">Afternoon (Top-Right)</button>
+          <button class="preset-btn" data-preset="-72,23,1.40">Golden Hour (Long)</button>
+          <button class="preset-btn" data-preset="-30,62,0.90">High Noon</button>
+        </div>
+      </div>
+
+      <div class="checkbox-row">
+        <label><input id="ctrl-orbit" type="checkbox" /> Auto-Orbit Sun</label>
+        <label><input id="ctrl-logo" type="checkbox" /> Kenney Logo</label>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "baseURL": "http://127.0.0.1:4173",
+  "browser": "155.0.8059.80",
+  "info": {
+    "calls": 1,
+    "textures": 4,
+    "width": 918,
+    "height": 515,
+    "three": "180"
+  },
+  "tests": [
+    "scene loads",
+    "shadow toggle changes pixels",
+    "sun direction changes pixels",
+    "five render views",
+    "soft shadows differ from hard",
+    "range controls",
+    "reset",
+    "reference slider",
+    "sun animation",
+    "PNG export",
+    "mobile fits",
+    "no console errors"
+  ],
+  "errors": []
+}

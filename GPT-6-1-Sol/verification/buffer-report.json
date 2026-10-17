@@ -1,0 +1,24 @@
+{
+  "finite_buffers": true,
+  "front_ge_back": true,
+  "sorted_disjoint_layers": true,
+  "unit_normals": true,
+  "valid_pixels_per_layer": [
+    133204,
+    36349,
+    13630,
+    1901
+  ],
+  "reference_comparison": {
+    "method": "RGB MAE in source scene foreground; attribution excluded",
+    "foreground_mae_0_255": 14.548,
+    "full_image_mae_0_255": 4.201,
+    "exact_reproduction": false,
+    "note": "Sprite positions matched to the source; ground/roads/props and closed depth proxies reconstructed approximately."
+  },
+  "dynamic_render": {
+    "shadow_changed_pixels": 45105,
+    "sun_changed_pixels": 48414,
+    "unshadowed_albedo_mae": 0.0
+  }
+}

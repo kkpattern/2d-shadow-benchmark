@@ -1,0 +1,79 @@
+{
+  "reference": "sample.png",
+  "reconstruction": "verification/reconstruction.png",
+  "image_size": [
+    918,
+    515
+  ],
+  "comparison_space": "8-bit sRGB image channels; no color normalization, registration, or rescaling",
+  "excluded_region": {
+    "condition": "x < 305 and y > 420",
+    "pixel_count": 28670,
+    "reason": "Reference Kenney/public-domain branding"
+  },
+  "background": {
+    "sampling": "Exact top-left pixel [0,0] from each image",
+    "reference_rgb": [
+      63,
+      124,
+      182
+    ],
+    "reconstruction_rgb": [
+      63,
+      124,
+      182
+    ],
+    "absolute_channel_difference": [
+      0,
+      0,
+      0
+    ]
+  },
+  "foreground_definition": {
+    "criterion": "Maximum absolute RGB channel distance from each image's own sampled background > 12",
+    "threshold_8bit": 12,
+    "purpose": "Suppress antialiasing fringe while preserving all scene content; independent backgrounds avoid labeling the color mismatch as foreground"
+  },
+  "silhouette": {
+    "reference_pixels": 134606,
+    "reconstruction_pixels": 133141,
+    "intersection_pixels": 132887,
+    "union_pixels": 134860,
+    "reference_only_pixels": 1719,
+    "reconstruction_only_pixels": 254,
+    "intersection_over_union": 0.9853700133471749,
+    "dice": 0.9926311032429869,
+    "reconstruction_precision": 0.9980922480678378,
+    "reference_recall": 0.9872293954207093
+  },
+  "scene_union": {
+    "pixel_count": 134860,
+    "mae_rgb_8bit": 23.46508230757823,
+    "rmse_rgb_8bit": 38.49345277922442,
+    "mean_pixel_error_p50": 11.333333333333334,
+    "mean_pixel_error_p95": 104.66666666666667
+  },
+  "scene_intersection": {
+    "pixel_count": 132887,
+    "mae_rgb_8bit": 23.15161001452362,
+    "rmse_rgb_8bit": 38.03199380746519,
+    "mean_pixel_error_p50": 11.333333333333334,
+    "mean_pixel_error_p95": 105.33333333333333
+  },
+  "global_excluding_branding": {
+    "pixel_count": 444100,
+    "mae_rgb_8bit": 7.131619755310366,
+    "rmse_rgb_8bit": 21.212892754991053,
+    "mean_pixel_error_p50": 0.0,
+    "mean_pixel_error_p95": 42.333333333333336
+  },
+  "shared_background": {
+    "pixel_count": 309240,
+    "mae_rgb_8bit": 0.008573707584184883,
+    "rmse_rgb_8bit": 0.18768629630279202,
+    "mean_pixel_error_p50": 0.0,
+    "mean_pixel_error_p95": 0.0
+  },
+  "shared_background_fraction_of_valid_image": 0.6963296554829993,
+  "interpretation": "Scene-union MAE is the primary color/composition error. The global MAE is strongly diluted by the large shared solid background. Silhouette overlap does not validate internal road layout or rendering/shadow correctness."
+}

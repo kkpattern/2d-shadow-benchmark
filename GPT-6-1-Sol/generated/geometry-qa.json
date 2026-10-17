@@ -1,0 +1,20 @@
+{
+  "width": 918,
+  "height": 515,
+  "layers": 4,
+  "finite": true,
+  "frontBeforeBack": true,
+  "normalsUnitMaxError": 5.960464477539063e-08,
+  "validPixels": 133204,
+  "albedoSilhouettePixels": 134145,
+  "silhouetteIoU": 0.9848767196513553,
+  "albedoWithoutGeometryPixels": 1489,
+  "geometryOutsideAlbedoPixels": 548,
+  "comparisonMask": "RGB difference>8 from blue background; Kenney logo excluded in x<320,y>=420",
+  "occupiedDepthRange": [
+    -267.31317138671875,
+    306.9474792480469
+  ],
+  "overflowPixels": 328,
+  "geometrySource": "Blender 5.2.2 evaluated closed-mesh triangles"
+}

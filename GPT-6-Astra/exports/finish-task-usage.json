@@ -1,0 +1,438 @@
+{
+  "schema_version": 1,
+  "title": "Finish TASK.md - token and time usage",
+  "thread_id": "01a14b0a-2e3d-7093-b92c-3a4ebd5787c6",
+  "thread_url": "thread://01a14b0a-2e3d-7093-b92c-3a4ebd5787c6?hostId=local",
+  "exported_at": "2026-10-18T03:25:25+08:00",
+  "display_timezone": "Asia/Shanghai",
+  "summary": {
+    "main_chat_tokens": {
+      "input_tokens": 6900696,
+      "cached_input_tokens": 6762880,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 37190,
+      "reasoning_output_tokens": 12565,
+      "total_tokens": 6937886,
+      "uncached_input_tokens": 137816,
+      "non_reasoning_output_tokens": 24625
+    },
+    "including_subagents_tokens": {
+      "input_tokens": 12140582,
+      "cached_input_tokens": 11811328,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 92246,
+      "reasoning_output_tokens": 24008,
+      "total_tokens": 12232828,
+      "uncached_input_tokens": 329254,
+      "non_reasoning_output_tokens": 68238
+    },
+    "task_elapsed_ms": 1457118,
+    "task_elapsed_seconds": 1457.118,
+    "task_elapsed_display": "24m 17.118s",
+    "summed_agent_turn_duration_ms": 3160200,
+    "summed_agent_turn_duration_display": "52m 40.200s",
+    "thread_count": 4,
+    "completed_turn_count": 10,
+    "started_at_local": "2026-10-18T02:05:26.718+08:00",
+    "completed_at_local": "2026-10-18T02:29:43.836+08:00"
+  },
+  "methodology": [
+    "Tokens come from the final event_msg/token_count.info.total_token_usage in each local session. Repeated cumulative counters are not added again.",
+    "Per-turn tokens are cumulative-counter differences. Their sums were checked against each session total; each distinct delta also matched last_token_usage.",
+    "Main-chat totals exclude subagents. Combined totals sum the main chat and its three identified child sessions, including their follow-up turns.",
+    "Cached input is included in input_tokens; reasoning output is included in output_tokens. total_tokens = input_tokens + output_tokens. Do not add the subsets again.",
+    "Token counts include repeatedly submitted conversation context. They are recorded model usage, not unique text size or a monetary bill.",
+    "Elapsed task time is the main turn duration_ms. Summed agent turn durations overlap because agents worked concurrently; they are not additional elapsed time or model-only inference time.",
+    "Turn timestamps use log event timestamps, displayed in UTC and Asia/Shanghai. Reported duration_ms is retained because subtracting log timestamps can differ slightly due to event recording.",
+    "Inherited parent task_started entries in child logs have no matching child completion and are excluded from child turn durations.",
+    "This export operation is excluded. Conversation text, tool output, and account-level rate-limit and credit data are not exported."
+  ],
+  "validation": {
+    "main_turn_time_matches_read_thread": true,
+    "all_counters_monotonic": true,
+    "all_distinct_counter_deltas_match_last_token_usage": true,
+    "per_turn_tokens_sum_to_thread_totals": true,
+    "child_parent_ids_verified": true,
+    "duplicate_counter_events_excluded": 14
+  },
+  "documentation_reference": {
+    "url": "https://learn.chatgpt.com/docs/app-server",
+    "note": "Official documentation identifies thread/tokenUsage/updated as usage updates for the active thread. Export values come from the local session files listed below."
+  },
+  "threads": [
+    {
+      "thread_id": "01a14b0a-2e3d-7093-b92c-3a4ebd5787c6",
+      "title": "Finish TASK.md",
+      "agent_path": "/root",
+      "parent_thread_id": null,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "reasoning_efforts": [
+        "xhigh"
+      ],
+      "tokens": {
+        "input_tokens": 6900696,
+        "cached_input_tokens": 6762880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 37190,
+        "reasoning_output_tokens": 12565,
+        "total_tokens": 6937886,
+        "uncached_input_tokens": 137816,
+        "non_reasoning_output_tokens": 24625
+      },
+      "completed_turn_count": 1,
+      "active_turn_duration_ms": 1457118,
+      "token_count_event_count": 79,
+      "distinct_usage_update_count": 68,
+      "duplicate_counter_event_count": 11,
+      "source_file": "C:\\Users\\kyler\\.codex\\sessions\\2026\\10\\18\\rollout-2026-10-18T02-05-20-01a14b0a-2e3d-7093-b92c-3a4ebd5787c6.jsonl",
+      "source_sha256": "5e7b8d00ece17fdae2878d7d3db443b8cd715c9b71fad7b4a4889e3a64ec7a95",
+      "turns": [
+        {
+          "turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "root_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "parent_turn_id": null,
+          "status": "completed",
+          "started_at_utc": "2026-10-17T18:05:26.718Z",
+          "completed_at_utc": "2026-10-17T18:29:43.836Z",
+          "started_at_local": "2026-10-18T02:05:26.718+08:00",
+          "completed_at_local": "2026-10-18T02:29:43.836+08:00",
+          "reported_started_at_unix_seconds": 1792260326,
+          "reported_completed_at_unix_seconds": 1792261783,
+          "duration_ms": 1457118,
+          "duration_seconds": 1457.118,
+          "time_to_first_token_ms": 3114,
+          "tokens": {
+            "input_tokens": 6900696,
+            "cached_input_tokens": 6762880,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 37190,
+            "reasoning_output_tokens": 12565,
+            "total_tokens": 6937886,
+            "uncached_input_tokens": 137816,
+            "non_reasoning_output_tokens": 24625
+          }
+        }
+      ]
+    },
+    {
+      "thread_id": "01a14b0a-b98d-79b0-96f0-f4117d55e224",
+      "title": null,
+      "agent_path": "/root/shadow_research",
+      "parent_thread_id": "01a14b0a-2e3d-7093-b92c-3a4ebd5787c6",
+      "models": [
+        "gpt-6-astra"
+      ],
+      "reasoning_efforts": [
+        "xhigh"
+      ],
+      "tokens": {
+        "input_tokens": 1880863,
+        "cached_input_tokens": 1791488,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 16191,
+        "reasoning_output_tokens": 2765,
+        "total_tokens": 1897054,
+        "uncached_input_tokens": 89375,
+        "non_reasoning_output_tokens": 13426
+      },
+      "completed_turn_count": 3,
+      "active_turn_duration_ms": 522915,
+      "token_count_event_count": 25,
+      "distinct_usage_update_count": 24,
+      "duplicate_counter_event_count": 1,
+      "source_file": "C:\\Users\\kyler\\.codex\\sessions\\2026\\10\\18\\rollout-2026-10-18T02-05-56-01a14b0a-b98d-79b0-96f0-f4117d55e224.jsonl",
+      "source_sha256": "5ea013c23058dbbabcc6561aabe66dec697cb6b9886916bb096c8b6a90410315",
+      "turns": [
+        {
+          "turn_id": "01a14b0a-b9d3-7381-9f80-5e5bca554a87",
+          "root_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "parent_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "status": "completed",
+          "started_at_utc": "2026-10-17T18:05:56.576Z",
+          "completed_at_utc": "2026-10-17T18:10:54.028Z",
+          "started_at_local": "2026-10-18T02:05:56.576+08:00",
+          "completed_at_local": "2026-10-18T02:10:54.028+08:00",
+          "reported_started_at_unix_seconds": 1792260356,
+          "reported_completed_at_unix_seconds": 1792260654,
+          "duration_ms": 297452,
+          "duration_seconds": 297.452,
+          "time_to_first_token_ms": 4715,
+          "tokens": {
+            "input_tokens": 837764,
+            "cached_input_tokens": 782336,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 7772,
+            "reasoning_output_tokens": 1518,
+            "total_tokens": 845536,
+            "uncached_input_tokens": 55428,
+            "non_reasoning_output_tokens": 6254
+          }
+        },
+        {
+          "turn_id": "01a14b17-a81f-7943-b54b-5ea633ce1eaf",
+          "root_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "parent_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "status": "completed",
+          "started_at_utc": "2026-10-17T18:20:04.021Z",
+          "completed_at_utc": "2026-10-17T18:23:02.953Z",
+          "started_at_local": "2026-10-18T02:20:04.021+08:00",
+          "completed_at_local": "2026-10-18T02:23:02.953+08:00",
+          "reported_started_at_unix_seconds": 1792261204,
+          "reported_completed_at_unix_seconds": 1792261382,
+          "duration_ms": 178931,
+          "duration_seconds": 178.931,
+          "time_to_first_token_ms": 4620,
+          "tokens": {
+            "input_tokens": 704906,
+            "cached_input_tokens": 678272,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 6763,
+            "reasoning_output_tokens": 1046,
+            "total_tokens": 711669,
+            "uncached_input_tokens": 26634,
+            "non_reasoning_output_tokens": 5717
+          }
+        },
+        {
+          "turn_id": "01a14b1b-cf0c-7851-864d-88e226e687ff",
+          "root_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "parent_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "status": "completed",
+          "started_at_utc": "2026-10-17T18:24:36.124Z",
+          "completed_at_utc": "2026-10-17T18:25:22.657Z",
+          "started_at_local": "2026-10-18T02:24:36.124+08:00",
+          "completed_at_local": "2026-10-18T02:25:22.657+08:00",
+          "reported_started_at_unix_seconds": 1792261476,
+          "reported_completed_at_unix_seconds": 1792261522,
+          "duration_ms": 46532,
+          "duration_seconds": 46.532,
+          "time_to_first_token_ms": 2151,
+          "tokens": {
+            "input_tokens": 338193,
+            "cached_input_tokens": 330880,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1656,
+            "reasoning_output_tokens": 201,
+            "total_tokens": 339849,
+            "uncached_input_tokens": 7313,
+            "non_reasoning_output_tokens": 1455
+          }
+        }
+      ]
+    },
+    {
+      "thread_id": "01a14b0a-d07b-7b40-8d28-83e234b0c81b",
+      "title": null,
+      "agent_path": "/root/asset_analysis",
+      "parent_thread_id": "01a14b0a-2e3d-7093-b92c-3a4ebd5787c6",
+      "models": [
+        "gpt-6-astra"
+      ],
+      "reasoning_efforts": [
+        "xhigh"
+      ],
+      "tokens": {
+        "input_tokens": 2452267,
+        "cached_input_tokens": 2383616,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 20216,
+        "reasoning_output_tokens": 5704,
+        "total_tokens": 2472483,
+        "uncached_input_tokens": 68651,
+        "non_reasoning_output_tokens": 14512
+      },
+      "completed_turn_count": 3,
+      "active_turn_duration_ms": 688357,
+      "token_count_event_count": 41,
+      "distinct_usage_update_count": 40,
+      "duplicate_counter_event_count": 1,
+      "source_file": "C:\\Users\\kyler\\.codex\\sessions\\2026\\10\\18\\rollout-2026-10-18T02-06-02-01a14b0a-d07b-7b40-8d28-83e234b0c81b.jsonl",
+      "source_sha256": "56896db85f565f35096bda742f912d422091ec536e73c670b1fb5a74edf9a5a2",
+      "turns": [
+        {
+          "turn_id": "01a14b0a-d0b4-7db0-a63d-e637d4ca7a53",
+          "root_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "parent_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "status": "completed",
+          "started_at_utc": "2026-10-17T18:06:02.434Z",
+          "completed_at_utc": "2026-10-17T18:13:56.273Z",
+          "started_at_local": "2026-10-18T02:06:02.434+08:00",
+          "completed_at_local": "2026-10-18T02:13:56.273+08:00",
+          "reported_started_at_unix_seconds": 1792260362,
+          "reported_completed_at_unix_seconds": 1792260836,
+          "duration_ms": 473839,
+          "duration_seconds": 473.839,
+          "time_to_first_token_ms": 4300,
+          "tokens": {
+            "input_tokens": 1225696,
+            "cached_input_tokens": 1185664,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 13745,
+            "reasoning_output_tokens": 4743,
+            "total_tokens": 1239441,
+            "uncached_input_tokens": 40032,
+            "non_reasoning_output_tokens": 9002
+          }
+        },
+        {
+          "turn_id": "01a14b17-cea7-7231-bde3-a5b52081e315",
+          "root_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "parent_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "status": "completed",
+          "started_at_utc": "2026-10-17T18:20:13.885Z",
+          "completed_at_utc": "2026-10-17T18:23:23.934Z",
+          "started_at_local": "2026-10-18T02:20:13.885+08:00",
+          "completed_at_local": "2026-10-18T02:23:23.934+08:00",
+          "reported_started_at_unix_seconds": 1792261213,
+          "reported_completed_at_unix_seconds": 1792261403,
+          "duration_ms": 190048,
+          "duration_seconds": 190.048,
+          "time_to_first_token_ms": 2299,
+          "tokens": {
+            "input_tokens": 955419,
+            "cached_input_tokens": 929664,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5739,
+            "reasoning_output_tokens": 961,
+            "total_tokens": 961158,
+            "uncached_input_tokens": 25755,
+            "non_reasoning_output_tokens": 4778
+          }
+        },
+        {
+          "turn_id": "01a14b1b-b9a0-7b61-aef5-9fc9927836ab",
+          "root_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "parent_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "status": "completed",
+          "started_at_utc": "2026-10-17T18:24:30.650Z",
+          "completed_at_utc": "2026-10-17T18:24:55.120Z",
+          "started_at_local": "2026-10-18T02:24:30.650+08:00",
+          "completed_at_local": "2026-10-18T02:24:55.120+08:00",
+          "reported_started_at_unix_seconds": 1792261470,
+          "reported_completed_at_unix_seconds": 1792261495,
+          "duration_ms": 24470,
+          "duration_seconds": 24.47,
+          "time_to_first_token_ms": 4585,
+          "tokens": {
+            "input_tokens": 271152,
+            "cached_input_tokens": 268288,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 732,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 271884,
+            "uncached_input_tokens": 2864,
+            "non_reasoning_output_tokens": 732
+          }
+        }
+      ]
+    },
+    {
+      "thread_id": "01a14b0b-c3d7-7e10-a007-c2b1602c48fa",
+      "title": null,
+      "agent_path": "/root/frontend",
+      "parent_thread_id": "01a14b0a-2e3d-7093-b92c-3a4ebd5787c6",
+      "models": [
+        "gpt-6-astra"
+      ],
+      "reasoning_efforts": [
+        "xhigh"
+      ],
+      "tokens": {
+        "input_tokens": 906756,
+        "cached_input_tokens": 873344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18649,
+        "reasoning_output_tokens": 2974,
+        "total_tokens": 925405,
+        "uncached_input_tokens": 33412,
+        "non_reasoning_output_tokens": 15675
+      },
+      "completed_turn_count": 3,
+      "active_turn_duration_ms": 491810,
+      "token_count_event_count": 19,
+      "distinct_usage_update_count": 18,
+      "duplicate_counter_event_count": 1,
+      "source_file": "C:\\Users\\kyler\\.codex\\sessions\\2026\\10\\18\\rollout-2026-10-18T02-07-04-01a14b0b-c3d7-7e10-a007-c2b1602c48fa.jsonl",
+      "source_sha256": "119c2ec66e4e2e21d63e85b2e957b15442860fe8e9dee928f632b58d6d544891",
+      "turns": [
+        {
+          "turn_id": "01a14b0b-c40f-7321-bc3a-f7a94c1957c4",
+          "root_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "parent_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "status": "completed",
+          "started_at_utc": "2026-10-17T18:07:04.730Z",
+          "completed_at_utc": "2026-10-17T18:13:49.223Z",
+          "started_at_local": "2026-10-18T02:07:04.730+08:00",
+          "completed_at_local": "2026-10-18T02:13:49.223+08:00",
+          "reported_started_at_unix_seconds": 1792260424,
+          "reported_completed_at_unix_seconds": 1792260829,
+          "duration_ms": 404493,
+          "duration_seconds": 404.493,
+          "time_to_first_token_ms": 4142,
+          "tokens": {
+            "input_tokens": 431380,
+            "cached_input_tokens": 406912,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 15996,
+            "reasoning_output_tokens": 2317,
+            "total_tokens": 447376,
+            "uncached_input_tokens": 24468,
+            "non_reasoning_output_tokens": 13679
+          }
+        },
+        {
+          "turn_id": "01a14b16-8aed-7f22-8f3a-6e8a637c61d2",
+          "root_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "parent_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "status": "completed",
+          "started_at_utc": "2026-10-17T18:18:51.013Z",
+          "completed_at_utc": "2026-10-17T18:20:13.432Z",
+          "started_at_local": "2026-10-18T02:18:51.013+08:00",
+          "completed_at_local": "2026-10-18T02:20:13.432+08:00",
+          "reported_started_at_unix_seconds": 1792261131,
+          "reported_completed_at_unix_seconds": 1792261213,
+          "duration_ms": 82418,
+          "duration_seconds": 82.418,
+          "time_to_first_token_ms": 2459,
+          "tokens": {
+            "input_tokens": 352619,
+            "cached_input_tokens": 344320,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 2589,
+            "reasoning_output_tokens": 657,
+            "total_tokens": 355208,
+            "uncached_input_tokens": 8299,
+            "non_reasoning_output_tokens": 1932
+          }
+        },
+        {
+          "turn_id": "01a14b20-381d-7453-9c18-25531f3d7b49",
+          "root_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "parent_turn_id": "01a14b0a-4527-77d3-b907-f0b823943c99",
+          "status": "completed",
+          "started_at_utc": "2026-10-17T18:29:25.180Z",
+          "completed_at_utc": "2026-10-17T18:29:30.079Z",
+          "started_at_local": "2026-10-18T02:29:25.180+08:00",
+          "completed_at_local": "2026-10-18T02:29:30.079+08:00",
+          "reported_started_at_unix_seconds": 1792261765,
+          "reported_completed_at_unix_seconds": 1792261770,
+          "duration_ms": 4899,
+          "duration_seconds": 4.899,
+          "time_to_first_token_ms": 2315,
+          "tokens": {
+            "input_tokens": 122757,
+            "cached_input_tokens": 122112,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 64,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 122821,
+            "uncached_input_tokens": 645,
+            "non_reasoning_output_tokens": 64
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "version": 1,
+  "status": "final",
+  "sourceSize": [
+    918,
+    515
+  ],
+  "scale": 0.7878787878787878,
+  "gridBasis": [
+    [
+      52,
+      26
+    ],
+    [
+      -52,
+      26
+    ]
+  ],
+  "sprites": [
+    {
+      "id": 29,
+      "asset": "assets/buildingTiles_029.png",
+      "x": 148,
+      "y": 196,
+      "width": 104.0,
+      "height": 100.06060606060606,
+      "nativeWidth": 132,
+      "nativeHeight": 127,
+      "scale": 0.7878787878787878,
+      "building": "yellow-tower",
+      "category": "base",
+      "story": 0,
+      "order": 0
+    },
+    {
+      "id": 51,
+      "asset": "assets/buildingTiles_051.png",
+      "x": 161,
+      "y": 168.2,
+      "width": 78.78787878787878,
+      "height": 66.96969696969697,
+      "nativeWidth": 100,
+      "nativeHeight": 85,
+      "scale": 0.7878787878787878,
+      "building": "yellow-tower",
+      "category": "story",
+      "story": 3,
+      "order": 1
+    },
+    {
+      "id": 51,
+      "asset": "assets/buildingTiles_051.png",
+      "x": 161,
+      "y": 140.6,
+      "width": 78.78787878787878,
+      "height": 66.96969696969697,
+      "nativeWidth": 100,
+      "nativeHeight": 85,
+      "scale": 0.7878787878787878,
+      "building": "yellow-tower",
+      "category": "story",
+      "story": 2,
+      "order": 2
+    },
+    {
+      "id": 51,
+      "asset": "assets/buildingTiles_051.png",
+      "x": 161,
+      "y": 113,
+      "width": 78.78787878787878,
+      "height": 66.96969696969697,
+      "nativeWidth": 100,
+      "nativeHeight": 85,
+      "scale": 0.7878787878787878,
+      "building": "yellow-tower",
+      "category": "story",
+      "story": 1,
+      "order": 3,
+      "whiteRoof": true
+    },
+    {
+      "id": 36,
+      "asset": "assets/buildingTiles_036.png",
+      "x": 200,
+      "y": 117.6,
+      "width": 104.78787878787878,
+      "height": 100.06060606060606,
+      "nativeWidth": 133,
+      "nativeHeight": 127,
+      "scale": 0.7878787878787878,
+      "building": "red-building",
+      "category": "base",
+      "story": 0,
+      "order": 4
+    },
+    {
+      "id": 49,
+      "asset": "assets/buildingTiles_049.png",
+      "x": 213,
+      "y": 90,
+      "width": 78.78787878787878,
+      "height": 66.96969696969697,
+      "nativeWidth": 100,
+      "nativeHeight": 85,
+      "scale": 0.7878787878787878,
+      "building": "red-building",
+      "category": "story",
+      "story": 1,
+      "order": 5,
+      "whiteRoof": true
+    },
+    {
+      "id": 14,
+      "asset": "assets/buildingTiles_014.png",
+      "x": 303,
+      "y": 116,
+      "width": 104.0,
+      "height": 100.06060606060606,
+      "nativeWidth": 132,
+      "nativeHeight": 127,
+      "scale": 0.7878787878787878,
+      "building": "brown-house",
+      "category": "base",
+      "story": 0,
+      "order": 6
+    },
+    {
+      "id": 99,
+      "asset": "assets/buildingTiles_099.png",
+      "x": 407,
+      "y": 166.8,
+      "width": 104.78787878787878,
+      "height": 100.06060606060606,
+      "nativeWidth": 133,
+      "nativeHeight": 127,
+      "scale": 0.7878787878787878,
+      "building": "tan-tower",
+      "category": "base",
+      "story": 0,
+      "order": 7
+    },
+    {
+      "id": 38,
+      "asset": "assets/buildingTiles_038.png",
+      "x": 420,
+      "y": 139.2,
+      "width": 78.78787878787878,
+      "height": 66.96969696969697,
+      "nativeWidth": 100,
+      "nativeHeight": 85,
+      "scale": 0.7878787878787878,
+      "building": "tan-tower",
+      "category": "story",
+      "story": 3,
+      "order": 8
+    },
+    {
+      "id": 38,
+      "asset": "assets/buildingTiles_038.png",
+      "x": 420,
+      "y": 111.6,
+      "width": 78.78787878787878,
+      "height": 66.96969696969697,
+      "nativeWidth": 100,
+      "nativeHeight": 85,
+      "scale": 0.7878787878787878,
+      "building": "tan-tower",
+      "category": "story",
+      "story": 2,
+      "order": 9
+    },
+    {
+      "id": 38,
+      "asset": "assets/buildingTiles_038.png",
+      "x": 420,
+      "y": 84,
+      "width": 78.78787878787878,
+      "height": 66.96969696969697,
+      "nativeWidth": 100,
+      "nativeHeight": 85,
+      "scale": 0.7878787878787878,
+      "building": "tan-tower",
+      "category": "story",
+      "story": 1,
+      "order": 10
+    },
+    {
+      "id": 1,
+      "asset": "assets/buildingTiles_001.png",
+      "x": 356,
+      "y": 247.2,
+      "width": 104.78787878787878,
+      "height": 100.06060606060606,
+      "nativeWidth": 133,
+      "nativeHeight": 127,
+      "scale": 0.7878787878787878,
+      "building": "glass-tower",
+      "category": "base",
+      "story": 0,
+      "order": 11
+    },
+    {
+      "id": 23,
+      "asset": "assets/buildingTiles_023.png",
+      "x": 369,
+      "y": 219.6,
+      "width": 78.0,
+      "height": 66.96969696969697,
+      "nativeWidth": 99,
+      "nativeHeight": 85,
+      "scale": 0.7878787878787878,
+      "building": "glass-tower",
+      "category": "story",
+      "story": 2,
+      "order": 12
+    },
+    {
+      "id": 23,
+      "asset": "assets/buildingTiles_023.png",
+      "x": 369,
+      "y": 192,
+      "width": 78.0,
+      "height": 66.96969696969697,
+      "nativeWidth": 99,
+      "nativeHeight": 85,
+      "scale": 0.7878787878787878,
+      "building": "glass-tower",
+      "category": "story",
+      "story": 1,
+      "order": 13,
+      "whiteRoof": true
+    },
+    {
+      "id": 34,
+      "asset": "assets/buildingTiles_034.png",
+      "x": 511,
+      "y": 220.6,
+      "width": 104.0,
+      "height": 100.06060606060606,
+      "nativeWidth": 132,
+      "nativeHeight": 127,
+      "scale": 0.7878787878787878,
+      "building": "red-cafe",
+      "category": "base",
+      "story": 0,
+      "order": 14
+    },
+    {
+      "id": 52,
+      "asset": "assets/buildingTiles_052.png",
+      "x": 524,
+      "y": 193,
+      "width": 78.0,
+      "height": 66.96969696969697,
+      "nativeWidth": 99,
+      "nativeHeight": 85,
+      "scale": 0.7878787878787878,
+      "building": "red-cafe",
+      "category": "story",
+      "story": 1,
+      "order": 15
+    },
+    {
+      "id": 124,
+      "asset": "assets/buildingTiles_124.png",
+      "x": 459,
+      "y": 143.6,
+      "width": 104.0,
+      "height": 100.06060606060606,
+      "nativeWidth": 132,
+      "nativeHeight": 127,
+      "scale": 0.7878787878787878,
+      "building": "blue-cafe",
+      "category": "base",
+      "story": 0,
+      "order": 16
+    },
+    {
+      "id": 31,
+      "asset": "assets/buildingTiles_031.png",
+      "x": 472,
+      "y": 116,
+      "width": 78.0,
+      "height": 66.96969696969697,
+      "nativeWidth": 99,
+      "nativeHeight": 85,
+      "scale": 0.7878787878787878,
+      "building": "blue-cafe",
+      "category": "story",
+      "story": 1,
+      "order": 17
+    },
+    {
+      "id": 108,
+      "asset": "assets/buildingTiles_108.png",
+      "x": 303,
+      "y": 222,
+      "width": 104.0,
+      "height": 100.06060606060606,
+      "nativeWidth": 132,
+      "nativeHeight": 127,
+      "scale": 0.7878787878787878,
+      "building": "small-shop",
+      "category": "base",
+      "story": 0,
+      "order": 18
+    },
+    {
+      "id": 88,
+      "asset": "assets/buildingTiles_088.png",
+      "x": 316,
+      "y": 212,
+      "width": 78.0,
+      "height": 48.060606060606055,
+      "nativeWidth": 99,
+      "nativeHeight": 61,
+      "scale": 0.7878787878787878,
+      "building": "small-shop",
+      "category": "roof",
+      "story": 1,
+      "order": 19
+    },
+    {
+      "id": 5,
+      "asset": "assets/buildingTiles_005.png",
+      "x": 472,
+      "y": 113,
+      "width": 78.0,
+      "height": 42.54545454545455,
+      "nativeWidth": 99,
+      "nativeHeight": 54,
+      "scale": 0.7878787878787878,
+      "building": "blue-cafe",
+      "category": "roof",
+      "story": 2,
+      "order": 20
+    }
+  ],
+  "buildings": [
+    {
+      "id": "yellow-tower",
+      "baseAsset": 29,
+      "tileCenter": [
+        200.0,
+        242.48484848484847
+      ],
+      "footprintCenter": [
+        200.0,
+        243.27272727272728
+      ],
+      "floors": 4,
+      "storyHeightNative": 35
+    },
+    {
+      "id": "red-building",
+      "baseAsset": 36,
+      "tileCenter": [
+        252.0,
+        164.08484848484846
+      ],
+      "footprintCenter": [
+        252.0,
+        164.87272727272727
+      ],
+      "floors": 2,
+      "storyHeightNative": 35
+    },
+    {
+      "id": "brown-house",
+      "baseAsset": 14,
+      "tileCenter": [
+        355.0,
+        162.48484848484847
+      ],
+      "footprintCenter": [
+        355.0,
+        163.27272727272728
+      ],
+      "floors": 1,
+      "storyHeightNative": 35
+    },
+    {
+      "id": "tan-tower",
+      "baseAsset": 99,
+      "tileCenter": [
+        459.0,
+        213.28484848484848
+      ],
+      "footprintCenter": [
+        459.0,
+        214.0727272727273
+      ],
+      "floors": 4,
+      "storyHeightNative": 35
+    },
+    {
+      "id": "glass-tower",
+      "baseAsset": 1,
+      "tileCenter": [
+        408.0,
+        293.6848484848485
+      ],
+      "footprintCenter": [
+        408.0,
+        294.47272727272724
+      ],
+      "floors": 3,
+      "storyHeightNative": 35
+    },
+    {
+      "id": "red-cafe",
+      "baseAsset": 34,
+      "tileCenter": [
+        563.0,
+        267.0848484848485
+      ],
+      "footprintCenter": [
+        563.0,
+        267.8727272727273
+      ],
+      "floors": 2,
+      "storyHeightNative": 35
+    },
+    {
+      "id": "blue-cafe",
+      "baseAsset": 124,
+      "tileCenter": [
+        511.0,
+        190.08484848484846
+      ],
+      "footprintCenter": [
+        511.0,
+        190.87272727272727
+      ],
+      "floors": 2,
+      "storyHeightNative": 35
+    },
+    {
+      "id": "small-shop",
+      "baseAsset": 108,
+      "tileCenter": [
+        355.0,
+        268.4848484848485
+      ],
+      "footprintCenter": [
+        355.0,
+        269.27272727272725
+      ],
+      "floors": 2,
+      "storyHeightNative": 35
+    }
+  ],
+  "customObjects": [
+    {
+      "id": "red-perimeter-wall",
+      "type": "wall",
+      "polyline": [
+        [
+          616,
+          247
+        ],
+        [
+          668,
+          273
+        ],
+        [
+          721,
+          247
+        ]
+      ],
+      "heightPx": 20,
+      "thicknessPx": 3,
+      "color": "#b64c4e"
+    },
+    {
+      "id": "cyan-vent",
+      "type": "cuboid",
+      "baseCenter": [
+        667,
+        217
+      ],
+      "topCenter": [
+        667,
+        199
+      ],
+      "widthPx": 19,
+      "depthPx": 19,
+      "heightPx": 18,
+      "color": "#83c1d1",
+      "plinth": {
+        "center": [
+          667,
+          219
+        ],
+        "widthPx": 51,
+        "depthPx": 25,
+        "heightPx": 6
+      }
+    },
+    {
+      "id": "tree-back",
+      "type": "tree",
+      "base": [
+        389,
+        180
+      ],
+      "crownTop": [
+        389,
+        146
+      ]
+    },
+    {
+      "id": "tree-front-left",
+      "type": "tree",
+      "base": [
+        595,
+        356
+      ],
+      "crownTop": [
+        595,
+        322
+      ]
+    },
+    {
+      "id": "tree-front-right",
+      "type": "tree",
+      "base": [
+        635,
+        336
+      ],
+      "crownTop": [
+        635,
+        302
+      ]
+    },
+    {
+      "id": "tree-behind-tower",
+      "type": "tree",
+      "base": [
+        427,
+        198
+      ],
+      "crownTop": [
+        427,
+        164
+      ],
+      "occludedBy": "tan-tower"
+    }
+  ],
+  "notes": [
+    "Coordinates measured against sample.png; source sprites uniformly scaled by26/33.",
+    "Source terrain slabs are removed from bases; native building footprint is [(66,35),(116,60),(66,85),(16,60)].",
+    "Tile top diamond native corners [(66,26),(132,59),(66,92),(0,59)]; tile sides extend toy127.",
+    "Paving, road, trees, vent, lamps, wall and ramp are vector reconstructions, not reference scene pixels.",
+    "Reference lighting and a few subpixel sprite boundaries remain approximate."
+  ]
+}

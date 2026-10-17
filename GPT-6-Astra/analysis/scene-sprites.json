@@ -1,0 +1,27 @@
+{
+  "referenceSize": [918, 515],
+  "backgroundRGB": [63, 124, 182],
+  "scale": 0.7878787878787878,
+  "coordinateConvention": "Sprite top-left in reference pixels. Base uses the full source asset; storeys and cap use their native source bounds. Positions are manual plus masked registration, approximately +/-2 pixels.",
+  "groundProjection": {"origin": [407,113], "u": [52,26], "v": [-52,26], "elevationDegrees":30, "buildingFootprintTileUnits":0.75},
+  "buildings": [
+    {"name":"rear-red", "base":{"id":36,"x":200,"y":118}, "storeys":[{"id":49,"x":213,"y":90}], "footFront":[252,185], "confidence":"high; left face occluded"},
+    {"name":"cabin", "base":{"id":14,"x":304,"y":117}, "storeys":[], "cap":{"id":102,"x":316,"y":114}, "footFront":[356,184], "confidence":"high"},
+    {"name":"rear-blue", "base":{"id":124,"x":460,"y":144}, "storeys":[{"id":15,"x":472,"y":116}], "cap":{"id":5,"x":472,"y":113}, "footFront":[512,211], "confidence":"medium; left half occluded by brown tower"},
+    {"name":"brown-tower", "base":{"id":99,"x":408,"y":171}, "storeys":[{"id":38,"x":421,"y":140},{"id":38,"x":421,"y":113},{"id":38,"x":421,"y":86}], "cap":{"id":110,"x":420,"y":83}, "footFront":[460,238], "confidence":"high module IDs; base partly occluded"},
+    {"name":"left-tan-tower", "base":{"id":29,"x":148,"y":195}, "storeys":[{"id":51,"x":161,"y":168},{"id":51,"x":161,"y":141},{"id":51,"x":161,"y":114}], "footFront":[200,262], "confidence":"high"},
+    {"name":"kiosk", "base":{"id":108,"x":304,"y":221}, "storeys":[], "cap":{"id":88,"x":317,"y":213}, "footFront":[356,288], "confidence":"high; right half occluded by glass tower"},
+    {"name":"right-red", "base":{"id":34,"x":512,"y":221}, "storeys":[{"id":52,"x":525,"y":194}], "cap":{"id":128,"x":524,"y":191}, "footFront":[564,288], "confidence":"high"},
+    {"name":"front-glass-tower", "base":{"id":1,"x":356,"y":247}, "storeys":[{"id":23,"x":369,"y":220},{"id":23,"x":369,"y":193}], "footFront":[408,314], "confidence":"high"}
+  ],
+  "proceduralFeatures": {
+    "trees": [{"crownCenter":[389,160],"trunkBase":[389,182]},{"crownCenter":[596,336],"trunkBase":[596,356]},{"crownCenter":[635,315],"trunkBase":[635,337]}],
+    "lamps": [{"poleBase":[258,248],"poleTop":[258,219],"armEnd":[274,226]},{"poleBase":[570,197],"poleTop":[570,167],"armEnd":[585,174]},{"poleBase":[635,209],"poleTop":[635,178],"armEnd":[620,169]}],
+    "rightPlatform": {"approximateTopCorners":[[615,217],[667,191],[719,217],[667,243]],"note":"Blue rooftop plinth/column absent from provided set."},
+    "rightLowRedEnclosure": {"approximateTopCorners":[[615,245],[667,219],[722,246],[667,273]],"wallScreenHeight":20,"note":"Larger footprint than supplied building sprites; reconstruct procedurally."},
+    "crosswalkCenter":[355,322],
+    "frontRampBounds":[407,370,504,446]
+  },
+  "logo": "KENNEY/public-domain badge in lower-left is reference branding, not a scene model or runtime texture.",
+  "caveats": ["Reference brightens the top parapet rims of left tan, rear red and front glass towers to near-white; supplied assets retain warm stone color.","Roof and facade candidate RMSE metrics compare small visible masks and are guidance rather than proof of exact source compositing.","Do not use sample.png or analysis reference masks as runtime scene imagery."]
+}

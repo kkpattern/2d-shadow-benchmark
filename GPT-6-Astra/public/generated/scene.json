@@ -1,0 +1,51 @@
+{
+  "width": 918,
+  "height": 515,
+  "pixelsPerUnit": 73.53910524340095,
+  "camera": {
+    "right": [
+      -0.7071067811865475,
+      0.7071067811865475,
+      0.0
+    ],
+    "up": [
+      -0.35355339059327373,
+      -0.35355339059327373,
+      0.8660254037844386
+    ],
+    "forward": [
+      -0.6123724356957945,
+      -0.6123724356957945,
+      -0.4999999999999999
+    ],
+    "origin": [
+      12.24744871391589,
+      12.24744871391589,
+      9.999999999999998
+    ]
+  },
+  "depthMin": 15.0,
+  "depthRange": 10.0,
+  "layers": 8,
+  "background": "#3f7cb6",
+  "maxHeight": 1.8178468458242292,
+  "blenderVersion": "5.2.2 LTS",
+  "solidCount": 254,
+  "maxIntervals": 7,
+  "overflowPixels": 0,
+  "coveredPixels": 131975,
+  "depthQuantum": 0.00015259021896696422,
+  "intervalHistogram": {
+    "0": 340795,
+    "1": 94173,
+    "2": 29813,
+    "3": 6841,
+    "4": 967,
+    "5": 168,
+    "6": 11,
+    "7": 2
+  },
+  "bakeSeconds": 0.87,
+  "conventions": "Positive linear camera depth. Raw packed RG front, BA back. Rows top-down. World Z up.",
+  "assets": "Original supplied Kenney building tiles; procedural ground and props."
+}

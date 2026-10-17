@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101925" />
+    <meta name="description" content="An interactive Three.js experiment in dynamic screen-space shadows for an isometric sprite city." />
+    <title>Isometric — Shadow Lab</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="Isometric Shadow Lab home"><span class="brand-mark" aria-hidden="true">◇</span><span>ISOMETRIC <span class="brand-divider">/</span> <span class="brand-light">SHADOW LAB</span></span></a>
+        <span class="experiment-label"><span class="status-dot"></span> EXPERIMENT 001</span>
+      </header>
+      <main>
+        <div class="page-heading">
+          <div><p class="eyebrow">REAL-TIME LIGHTING · 2D SPRITES</p><h1>A small city. A moving sun.</h1><p class="intro">Explore the depth behind a flat image.</p></div>
+          <div class="renderer-label"><span class="renderer-icon" aria-hidden="true">⌘</span><div>Three.js <span>GPU screen-space raymarching</span></div></div>
+        </div>
+        <div class="lab-layout">
+          <section class="scene-panel" aria-label="Interactive city rendering">
+            <div class="scene-toolbar"><div><span class="scene-id">01</span> Downtown blocks <span class="scene-meta">ISOMETRIC STUDY</span></div><button id="compare-button" class="quiet-button" aria-pressed="false"><span aria-hidden="true">◧</span> Compare reference</button></div>
+            <div class="scene-stage" id="scene-stage">
+              <div id="canvas-container"></div>
+              <div class="stage-label"><span class="status-dot"></span><span id="stage-label-text">LIVE LIGHTING</span></div>
+              <div class="reference-overlay" id="reference-overlay" hidden><img src="/sample.png" alt="Original Kenney isometric city reference" /><span class="reference-label">REFERENCE</span></div>
+              <div class="comparison-divider" id="comparison-divider" hidden><span>◀ ▶</span></div>
+              <input class="comparison-slider" id="comparison-slider" type="range" min="0" max="100" value="50" aria-label="Reference comparison divider" hidden />
+              <div class="stage-caption"><span id="stage-description">Original sprites. Dynamic cast shadows.</span><span class="stage-resolution">918 × 515</span></div>
+              <div class="loading" id="loading"><span class="loading-ring"></span><strong>Building the light field</strong><span>Loading geometry-derived depth layers…</span></div>
+            </div>
+            <div class="view-bar"><span class="view-label">VIEW</span><div class="view-tabs" role="group" aria-label="Rendering view"><button class="view-tab active" data-view="beauty" aria-pressed="true">Lit scene</button><button class="view-tab" data-view="original" aria-pressed="false">Original</button><button class="view-tab" data-view="depth" aria-pressed="false">Depth</button><button class="view-tab" data-view="thickness" aria-pressed="false">Thickness</button><button class="view-tab" data-view="normals" aria-pressed="false">Normals</button><button class="view-tab" data-view="shadow" aria-pressed="false">Shadow mask</button></div><span class="fps"><span class="status-dot"></span><span id="fps-value">—</span> FPS</span></div>
+            <div class="scene-note"><span class="note-icon" aria-hidden="true">i</span><span id="view-note">Sprite colors retain their original shading; the moving sun adds geometry-aware cast shadows.</span></div>
+          </section>
+          <aside class="controls-panel" aria-label="Lighting controls">
+            <div class="controls-heading"><div><p class="eyebrow">GLOBAL LIGHT</p><h2>Follow the sun</h2></div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sun-preview" aria-hidden="true"><div class="sun-orbit"></div><div class="sun-orbit inner"></div><span class="compass north">N</span><span class="compass east">E</span><span class="compass south">S</span><span class="compass west">W</span><div class="sun-direction" id="sun-direction"><span class="sun-ray"></span><span class="sun-disc">☀</span></div><div class="city-marker">◇</div><span class="sun-preview-label">DIRECTIONAL SUN</span></div>
+            <div class="control-field"><label for="azimuth">Azimuth <output id="azimuth-value" for="azimuth">−40°</output></label><input id="azimuth" type="range" min="-180" max="180" step="1" value="-40" /><div class="range-labels"><span>−180°</span><span>180°</span></div></div>
+            <div class="control-field"><label for="elevation">Elevation <output id="elevation-value" for="elevation">40°</output></label><input id="elevation" type="range" min="10" max="85" step="1" value="40" /><div class="range-labels"><span>Horizon</span><span>Overhead</span></div></div>
+            <div class="presets" role="group" aria-label="Sun presets"><button data-preset="morning">Morning</button><button data-preset="noon">Noon</button><button data-preset="evening">Evening</button></div>
+            <button id="animate-button" class="animate-button" aria-pressed="false"><span id="animate-icon" aria-hidden="true">▶</span><span id="animate-label">Animate sun</span><span class="key-hint">Space</span></button>
+            <div class="controls-divider"></div>
+            <div class="toggle-row"><div><label for="shadows">Cast shadows</label><p>Raymarched through depth layers</p></div><label class="switch"><input id="shadows" type="checkbox" checked aria-label="Cast shadows" /><span></span></label></div>
+            <div class="control-field compact"><label for="softness">Softness <output id="softness-value" for="softness">35%</output></label><input id="softness" type="range" min="0" max="1" step="0.01" value="0.35" /></div>
+            <div class="control-field compact"><label for="strength">Shadow strength <output id="strength-value" for="strength">65%</output></label><input id="strength" type="range" min="0" max="1" step="0.01" value="0.65" /></div>
+            <button id="reset-button" class="reset-button"><span aria-hidden="true">↺</span> Reset lighting</button>
+          </aside>
+        </div>
+        <footer class="page-footer"><div><span class="footer-dot"></span> Baked color <span class="footer-plus">+</span> reconstructed geometry <span class="footer-plus">+</span> dynamic light</div><div>ART BY <a href="https://kenney.nl" target="_blank" rel="noreferrer">KENNEY</a><span class="footer-divider">/</span> CC0</div></footer>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+Finish TASK.md - Token and time usage
+Thread: 01a14b0a-2e3d-7093-b92c-3a4ebd5787c6
+Timezone: Asia/Shanghai (UTC+08:00)
+Started:   2026-10-18T02:05:26.718+08:00
+Completed: 2026-10-18T02:29:43.836+08:00
+Elapsed task time: 24m 17.118s
+Summed agent turn durations (overlap included): 52m 40.200s
+
+Token metric                           Main chat     With subagents
+Input tokens                           6,900,696         12,140,582
+  Cached input (subset)                6,762,880         11,811,328
+  Uncached input                         137,816            329,254
+  Cache-write input                            0                  0
+Output tokens                             37,190             92,246
+  Reasoning output (subset)               12,565             24,008
+  Non-reasoning output                    24,625             68,238
+Total tokens                           6,937,886         12,232,828
+
+Per-agent totals:
+Agent                        Total tokens   Turns     Active turn duration
+/root                           6,937,886       1              24m 17.118s
+/root/shadow_research           1,897,054       3               8m 42.915s
+/root/asset_analysis            2,472,483       3              11m 28.357s
+/root/frontend                    925,405       3               8m 11.810s
+
+Methodology:
+- Tokens come from the final event_msg/token_count.info.total_token_usage in each local session. Repeated cumulative counters are not added again.
+- Per-turn tokens are cumulative-counter differences. Their sums were checked against each session total; each distinct delta also matched last_token_usage.
+- Main-chat totals exclude subagents. Combined totals sum the main chat and its three identified child sessions, including their follow-up turns.
+- Cached input is included in input_tokens; reasoning output is included in output_tokens. total_tokens = input_tokens + output_tokens. Do not add the subsets again.
+- Token counts include repeatedly submitted conversation context. They are recorded model usage, not unique text size or a monetary bill.
+- Elapsed task time is the main turn duration_ms. Summed agent turn durations overlap because agents worked concurrently; they are not additional elapsed time or model-only inference time.
+- Turn timestamps use log event timestamps, displayed in UTC and Asia/Shanghai. Reported duration_ms is retained because subtracting log timestamps can differ slightly due to event recording.
+- Inherited parent task_started entries in child logs have no matching child completion and are excluded from child turn durations.
+- This export operation is excluded. Conversation text, tool output, and account-level rate-limit and credit data are not exported.
+
+Detailed data and source file hashes: finish-task-usage.json
+Official event reference: https://learn.chatgpt.com/docs/app-server

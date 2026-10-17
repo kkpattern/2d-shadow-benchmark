@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "title": "Finish TASK.md Model-G - token and time usage",
+  "exported_at_local": "2026-10-18T03:26:16+08:00",
+  "timezone": "Asia/Shanghai",
+  "thread": {
+    "title": "Finish TASK.md Model-G",
+    "thread_id": "01a14af9-24f0-7970-8e7c-3c24fee91bf7",
+    "host_id": "local",
+    "url": "thread://01a14af9-24f0-7970-8e7c-3c24fee91bf7?hostId=local",
+    "workspace": "E:\\Projects\\2d-shadow-benchmark\\model-G"
+  },
+  "summary": {
+    "main_chat": {
+      "thread_count": 1,
+      "turn_count": 1,
+      "token_usage": {
+        "input_tokens": 4773818,
+        "cached_input_tokens": 4651136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 41889,
+        "reasoning_output_tokens": 12958,
+        "total_tokens": 4815707,
+        "uncached_input_tokens": 122682,
+        "non_reasoning_output_tokens": 28931
+      },
+      "summed_active_duration_ms": 966406,
+      "summed_active_duration_seconds": 966.406
+    },
+    "delegated_agents": {
+      "thread_count": 3,
+      "turn_count": 5,
+      "token_usage": {
+        "input_tokens": 11674569,
+        "cached_input_tokens": 11336192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 76621,
+        "reasoning_output_tokens": 29130,
+        "total_tokens": 11751190,
+        "uncached_input_tokens": 338377,
+        "non_reasoning_output_tokens": 47491
+      },
+      "summed_active_duration_ms": 1904016,
+      "summed_active_duration_seconds": 1904.016
+    },
+    "main_chat_and_delegated_agents": {
+      "thread_count": 4,
+      "turn_count": 6,
+      "token_usage": {
+        "input_tokens": 16448387,
+        "cached_input_tokens": 15987328,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 118510,
+        "reasoning_output_tokens": 42088,
+        "total_tokens": 16566897,
+        "uncached_input_tokens": 461059,
+        "non_reasoning_output_tokens": 76422
+      },
+      "summed_active_duration_ms": 2870422,
+      "summed_active_duration_seconds": 2870.422
+    },
+    "automatic_reviews": {
+      "thread_count": 1,
+      "turn_count": 1,
+      "token_usage": {
+        "input_tokens": 20430,
+        "cached_input_tokens": 6144,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 330,
+        "reasoning_output_tokens": 260,
+        "total_tokens": 20760,
+        "uncached_input_tokens": 14286,
+        "non_reasoning_output_tokens": 70
+      },
+      "summed_active_duration_ms": 3792,
+      "summed_active_duration_seconds": 3.792
+    },
+    "all_recorded_activity": {
+      "thread_count": 5,
+      "turn_count": 7,
+      "token_usage": {
+        "input_tokens": 16468817,
+        "cached_input_tokens": 15993472,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 118840,
+        "reasoning_output_tokens": 42348,
+        "total_tokens": 16587657,
+        "uncached_input_tokens": 475345,
+        "non_reasoning_output_tokens": 76492
+      },
+      "summed_active_duration_ms": 2874214,
+      "summed_active_duration_seconds": 2874.214
+    },
+    "elapsed_time": {
+      "duration_ms": 966406,
+      "duration_seconds": 966.406,
+      "display": "16m 6.406s",
+      "started_at_utc": "2026-10-17T17:46:50.864Z",
+      "completed_at_utc": "2026-10-17T18:02:57.269Z",
+      "started_at_local": "2026-10-18T01:46:50.864+08:00",
+      "completed_at_local": "2026-10-18T02:02:57.269+08:00"
+    }
+  },
+  "threads": [
+    {
+      "thread_id": "01a14af9-24f0-7970-8e7c-3c24fee91bf7",
+      "parent_thread_id": null,
+      "role": "main",
+      "agent_path": "/root",
+      "model_names": [
+        "gpt-6.1-sol"
+      ],
+      "token_usage": {
+        "input_tokens": 4773818,
+        "cached_input_tokens": 4651136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 41889,
+        "reasoning_output_tokens": 12958,
+        "total_tokens": 4815707,
+        "uncached_input_tokens": 122682,
+        "non_reasoning_output_tokens": 28931
+      },
+      "active_duration_ms": 966406,
+      "active_duration_seconds": 966.406,
+      "turns": [
+        {
+          "turn_id": "01a14af9-3e51-7952-8806-6047a7fb5052",
+          "started_at_utc": "2026-10-17T17:46:50.864Z",
+          "started_at_local": "2026-10-18T01:46:50.864+08:00",
+          "start_source_line": 2,
+          "token_usage": {
+            "input_tokens": 4773818,
+            "cached_input_tokens": 4651136,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 41889,
+            "reasoning_output_tokens": 12958,
+            "total_tokens": 4815707,
+            "uncached_input_tokens": 122682,
+            "non_reasoning_output_tokens": 28931
+          },
+          "usage_update_count": 56,
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "xhigh",
+          "status": "completed",
+          "completed_at_utc": "2026-10-17T18:02:57.269Z",
+          "completed_at_local": "2026-10-18T02:02:57.269+08:00",
+          "completion_source_line": 540,
+          "duration_ms": 966406,
+          "duration_seconds": 966.406,
+          "time_to_first_token_ms": 4690
+        }
+      ],
+      "source": {
+        "rollout_path": "C:\\Users\\kyler\\.codex\\sessions\\2026\\10\\18\\rollout-2026-10-18T01-46-44-01a14af9-24f0-7970-8e7c-3c24fee91bf7.jsonl",
+        "sha256": "4023e37b3bdd6e6fa903c012fb64b37e66ba3a7b2ae989be63f12d559a10cc91",
+        "last_usage_event": {
+          "line": 539,
+          "ordinal": 538,
+          "timestamp_utc": "2026-10-17T18:02:57.253Z"
+        },
+        "usage_event_count": 64,
+        "distinct_usage_update_count": 56,
+        "duplicate_usage_event_count": 8
+      }
+    },
+    {
+      "thread_id": "01a14af9-b09a-76d3-bd3f-5f0415885cc1",
+      "parent_thread_id": "01a14af9-24f0-7970-8e7c-3c24fee91bf7",
+      "role": "subagent",
+      "agent_path": "/root/shadow_research",
+      "model_names": [
+        "gpt-6.1-sol"
+      ],
+      "token_usage": {
+        "input_tokens": 4306702,
+        "cached_input_tokens": 4162304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14876,
+        "reasoning_output_tokens": 3610,
+        "total_tokens": 4321578,
+        "uncached_input_tokens": 144398,
+        "non_reasoning_output_tokens": 11266
+      },
+      "active_duration_ms": 387847,
+      "active_duration_seconds": 387.847,
+      "turns": [
+        {
+          "turn_id": "01a14af9-b0d2-7000-aefd-8b88871d8085",
+          "started_at_utc": "2026-10-17T17:47:20.159Z",
+          "started_at_local": "2026-10-18T01:47:20.159+08:00",
+          "start_source_line": 16,
+          "token_usage": {
+            "input_tokens": 1253250,
+            "cached_input_tokens": 1169664,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 7646,
+            "reasoning_output_tokens": 692,
+            "total_tokens": 1260896,
+            "uncached_input_tokens": 83586,
+            "non_reasoning_output_tokens": 6954
+          },
+          "usage_update_count": 17,
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "xhigh",
+          "status": "completed",
+          "completed_at_utc": "2026-10-17T17:50:25.669Z",
+          "completed_at_local": "2026-10-18T01:50:25.669+08:00",
+          "completion_source_line": 135,
+          "duration_ms": 185509,
+          "duration_seconds": 185.509,
+          "time_to_first_token_ms": 4446
+        },
+        {
+          "turn_id": "01a14b01-fb64-7b83-a69c-b66f609b4f95",
+          "started_at_utc": "2026-10-17T17:56:23.545Z",
+          "started_at_local": "2026-10-18T01:56:23.545+08:00",
+          "start_source_line": 136,
+          "token_usage": {
+            "input_tokens": 2493029,
+            "cached_input_tokens": 2435200,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 6466,
+            "reasoning_output_tokens": 2918,
+            "total_tokens": 2499495,
+            "uncached_input_tokens": 57829,
+            "non_reasoning_output_tokens": 3548
+          },
+          "usage_update_count": 19,
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "xhigh",
+          "status": "completed",
+          "completed_at_utc": "2026-10-17T17:59:29.619Z",
+          "completed_at_local": "2026-10-18T01:59:29.619+08:00",
+          "completion_source_line": 277,
+          "duration_ms": 186074,
+          "duration_seconds": 186.074,
+          "time_to_first_token_ms": 2929
+        },
+        {
+          "turn_id": "01a14b04-fb2c-7ab2-8ee5-168e1c38964f",
+          "started_at_utc": "2026-10-17T17:59:40.097Z",
+          "started_at_local": "2026-10-18T01:59:40.097+08:00",
+          "start_source_line": 278,
+          "token_usage": {
+            "input_tokens": 560423,
+            "cached_input_tokens": 557440,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 764,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 561187,
+            "uncached_input_tokens": 2983,
+            "non_reasoning_output_tokens": 764
+          },
+          "usage_update_count": 4,
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "xhigh",
+          "status": "completed",
+          "completed_at_utc": "2026-10-17T17:59:56.362Z",
+          "completed_at_local": "2026-10-18T01:59:56.362+08:00",
+          "completion_source_line": 302,
+          "duration_ms": 16264,
+          "duration_seconds": 16.264,
+          "time_to_first_token_ms": 1902
+        }
+      ],
+      "source": {
+        "rollout_path": "C:\\Users\\kyler\\.codex\\sessions\\2026\\10\\18\\rollout-2026-10-18T01-47-20-01a14af9-b09a-76d3-bd3f-5f0415885cc1.jsonl",
+        "sha256": "11b11f796fe372c452613a024b9ec47767c924a9626e0bb79d9cff74218cc40a",
+        "last_usage_event": {
+          "line": 301,
+          "ordinal": 300,
+          "timestamp_utc": "2026-10-17T17:59:56.348Z"
+        },
+        "usage_event_count": 41,
+        "distinct_usage_update_count": 40,
+        "duplicate_usage_event_count": 1
+      }
+    },
+    {
+      "thread_id": "01a14af9-c500-7583-85bd-ce8c00ba437a",
+      "parent_thread_id": "01a14af9-24f0-7970-8e7c-3c24fee91bf7",
+      "role": "subagent",
+      "agent_path": "/root/scene_analysis",
+      "model_names": [
+        "gpt-6.1-sol"
+      ],
+      "token_usage": {
+        "input_tokens": 3815494,
+        "cached_input_tokens": 3748992,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29481,
+        "reasoning_output_tokens": 13955,
+        "total_tokens": 3844975,
+        "uncached_input_tokens": 66502,
+        "non_reasoning_output_tokens": 15526
+      },
+      "active_duration_ms": 781072,
+      "active_duration_seconds": 781.072,
+      "turns": [
+        {
+          "turn_id": "01a14af9-c534-72d0-aecc-070e9fe0b86a",
+          "started_at_utc": "2026-10-17T17:47:25.376Z",
+          "started_at_local": "2026-10-18T01:47:25.376+08:00",
+          "start_source_line": 17,
+          "token_usage": {
+            "input_tokens": 3815494,
+            "cached_input_tokens": 3748992,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 29481,
+            "reasoning_output_tokens": 13955,
+            "total_tokens": 3844975,
+            "uncached_input_tokens": 66502,
+            "non_reasoning_output_tokens": 15526
+          },
+          "usage_update_count": 65,
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "xhigh",
+          "status": "completed",
+          "completed_at_utc": "2026-10-17T18:00:26.448Z",
+          "completed_at_local": "2026-10-18T02:00:26.448+08:00",
+          "completion_source_line": 537,
+          "duration_ms": 781072,
+          "duration_seconds": 781.072,
+          "time_to_first_token_ms": 3560
+        }
+      ],
+      "source": {
+        "rollout_path": "C:\\Users\\kyler\\.codex\\sessions\\2026\\10\\18\\rollout-2026-10-18T01-47-25-01a14af9-c500-7583-85bd-ce8c00ba437a.jsonl",
+        "sha256": "975ff103f99b2b0401b07470fafa2fac281bab2c4c09ba56ac9cade1a5597e17",
+        "last_usage_event": {
+          "line": 536,
+          "ordinal": 535,
+          "timestamp_utc": "2026-10-17T18:00:26.434Z"
+        },
+        "usage_event_count": 72,
+        "distinct_usage_update_count": 65,
+        "duplicate_usage_event_count": 7
+      }
+    },
+    {
+      "thread_id": "01a14af9-c537-7a50-8f3d-61ffe54609e5",
+      "parent_thread_id": "01a14af9-c500-7583-85bd-ce8c00ba437a",
+      "role": "automatic_review",
+      "agent_path": null,
+      "model_names": [
+        "codex-auto-review"
+      ],
+      "token_usage": {
+        "input_tokens": 20430,
+        "cached_input_tokens": 6144,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 330,
+        "reasoning_output_tokens": 260,
+        "total_tokens": 20760,
+        "uncached_input_tokens": 14286,
+        "non_reasoning_output_tokens": 70
+      },
+      "active_duration_ms": 3792,
+      "active_duration_seconds": 3.792,
+      "turns": [
+        {
+          "turn_id": "01a14b05-737b-7113-9dd3-b48bd8e3068f",
+          "started_at_utc": "2026-10-17T18:00:10.877Z",
+          "started_at_local": "2026-10-18T02:00:10.877+08:00",
+          "start_source_line": 2,
+          "token_usage": {
+            "input_tokens": 20430,
+            "cached_input_tokens": 6144,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 330,
+            "reasoning_output_tokens": 260,
+            "total_tokens": 20760,
+            "uncached_input_tokens": 14286,
+            "non_reasoning_output_tokens": 70
+          },
+          "usage_update_count": 1,
+          "model": "codex-auto-review",
+          "reasoning_effort": "low",
+          "status": "completed",
+          "completed_at_utc": "2026-10-17T18:00:14.668Z",
+          "completed_at_local": "2026-10-18T02:00:14.668+08:00",
+          "completion_source_line": 25,
+          "duration_ms": 3792,
+          "duration_seconds": 3.792,
+          "time_to_first_token_ms": 2584
+        }
+      ],
+      "source": {
+        "rollout_path": "C:\\Users\\kyler\\.codex\\sessions\\2026\\10\\18\\rollout-2026-10-18T01-47-25-01a14af9-c537-7a50-8f3d-61ffe54609e5.jsonl",
+        "sha256": "aec3cfb07d4d77bf84e63939d0117c8234d1aca81052ef1753f02bd3b4731a0b",
+        "last_usage_event": {
+          "line": 24,
+          "ordinal": 23,
+          "timestamp_utc": "2026-10-17T18:00:14.662Z"
+        },
+        "usage_event_count": 1,
+        "distinct_usage_update_count": 1,
+        "duplicate_usage_event_count": 0
+      }
+    },
+    {
+      "thread_id": "01a14afb-1493-7443-a6ae-8f43b80598f4",
+      "parent_thread_id": "01a14af9-24f0-7970-8e7c-3c24fee91bf7",
+      "role": "subagent",
+      "agent_path": "/root/blender_pipeline",
+      "model_names": [
+        "gpt-6.1-sol"
+      ],
+      "token_usage": {
+        "input_tokens": 3552373,
+        "cached_input_tokens": 3424896,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 32264,
+        "reasoning_output_tokens": 11565,
+        "total_tokens": 3584637,
+        "uncached_input_tokens": 127477,
+        "non_reasoning_output_tokens": 20699
+      },
+      "active_duration_ms": 735097,
+      "active_duration_seconds": 735.097,
+      "turns": [
+        {
+          "turn_id": "01a14afb-14d2-7b53-bab0-9fc4ec33f28c",
+          "started_at_utc": "2026-10-17T17:48:51.295Z",
+          "started_at_local": "2026-10-18T01:48:51.295+08:00",
+          "start_source_line": 19,
+          "token_usage": {
+            "input_tokens": 3552373,
+            "cached_input_tokens": 3424896,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 32264,
+            "reasoning_output_tokens": 11565,
+            "total_tokens": 3584637,
+            "uncached_input_tokens": 127477,
+            "non_reasoning_output_tokens": 20699
+          },
+          "usage_update_count": 59,
+          "model": "gpt-6.1-sol",
+          "reasoning_effort": "xhigh",
+          "status": "completed",
+          "completed_at_utc": "2026-10-17T18:01:06.392Z",
+          "completed_at_local": "2026-10-18T02:01:06.392+08:00",
+          "completion_source_line": 479,
+          "duration_ms": 735097,
+          "duration_seconds": 735.097,
+          "time_to_first_token_ms": 3784
+        }
+      ],
+      "source": {
+        "rollout_path": "C:\\Users\\kyler\\.codex\\sessions\\2026\\10\\18\\rollout-2026-10-18T01-48-51-01a14afb-1493-7443-a6ae-8f43b80598f4.jsonl",
+        "sha256": "1964f1fab050cc29250ae959e198857af78b30ca7fdee7ad0f1c9d6e75245751",
+        "last_usage_event": {
+          "line": 478,
+          "ordinal": 477,
+          "timestamp_utc": "2026-10-17T18:01:06.378Z"
+        },
+        "usage_event_count": 64,
+        "distinct_usage_update_count": 59,
+        "duplicate_usage_event_count": 5
+      }
+    }
+  ],
+  "methodology": {
+    "tokens": "Use each thread final cumulative total_token_usage once. Validate against sums of last_token_usage only when the cumulative counters advance; repeated snapshots are excluded. Child counters start at zero and are summed separately.",
+    "time": "Use recorded task_complete.duration_ms for completed own turns only. Ignore inherited parent task_started entries. Main elapsed time is the one main turn duration; summed agent durations overlap and are not wall-clock elapsed time.",
+    "token_subsets": "Cached input tokens are included in input_tokens; reasoning output tokens are included in output_tokens. Neither subset is added again to total_tokens.",
+    "scope": "The referenced main chat, its three delegated agent threads, and its one automatic review thread in the matching local session logs. Current export-chat usage is excluded.",
+    "local_records_only": "These are recorded session counters, not a billing or monetary cost estimate.",
+    "verification": "Main turn ID, status, timestamps at second precision, and duration were cross-checked with read_thread. Per-turn token sums, independent last-usage sums, and final cumulative counters agree for every included thread.",
+    "field_reference": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/subagents/subresources/turns/methods/retrieve"
+  }
+}

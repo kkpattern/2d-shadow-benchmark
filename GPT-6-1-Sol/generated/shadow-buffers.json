@@ -1,0 +1,721 @@
+{
+  "width": 918,
+  "height": 515,
+  "layers": 4,
+  "floatFormat": "IEEE754 float32 little endian",
+  "blenderVersion": "5.2.2 LTS",
+  "rowOrder": "top-to-bottom",
+  "pixelSample": "pixel center (x+0.5,y+0.5)",
+  "intervalFile": "shadow-intervals.f32",
+  "intervalLayout": "layer-major, then row-major RGBA",
+  "intervalChannels": [
+    "frontDepthTowardCamera",
+    "backDepthTowardCamera",
+    "objectId",
+    "validity"
+  ],
+  "normalFile": "shadow-normals.f32",
+  "normalChannels": [
+    "right",
+    "down",
+    "towardCamera",
+    "validity"
+  ],
+  "materialFile": "shadow-materials.f32",
+  "materialChannels": [
+    "linearR",
+    "linearG",
+    "linearB",
+    "validity"
+  ],
+  "origin": [
+    459.0,
+    257.5
+  ],
+  "right": [
+    0.7071067811865475,
+    -0.7071067811865475,
+    0.0
+  ],
+  "down": [
+    0.35355339059327373,
+    0.35355339059327373,
+    -0.8660254037844386
+  ],
+  "toward": [
+    0.6123724356957945,
+    0.6123724356957945,
+    0.5
+  ],
+  "worldToView": [
+    [
+      0.7071067811865475,
+      -0.7071067811865475,
+      0.0
+    ],
+    [
+      0.35355339059327373,
+      0.35355339059327373,
+      -0.8660254037844386
+    ],
+    [
+      0.6123724356957945,
+      0.6123724356957945,
+      0.5
+    ]
+  ],
+  "worldUnits": "one screen pixel along an orthonormal camera basis",
+  "screenToWorld": "(x-origin.x)*right + (y-origin.y)*down + depth*toward",
+  "groundDepth": "sqrt(3)*(y-origin.y) for world Z=0",
+  "depthRange": [
+    -251.14736938476562,
+    306.9474792480469
+  ],
+  "thicknessPreviewMax": 127.61438751220703,
+  "occupiedDepthRange": [
+    -267.31317138671875,
+    306.9474792480469
+  ],
+  "intervalMergeTolerance": 0.3,
+  "overflowPixels": 328,
+  "validPixels": 133204,
+  "objectCount": 127,
+  "objects": [
+    {
+      "id": 1,
+      "name": "Island pavement and foundation",
+      "material": "Pavement"
+    },
+    {
+      "id": 2,
+      "name": "29_walls",
+      "material": "Wall 29"
+    },
+    {
+      "id": 3,
+      "name": "29_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 4,
+      "name": "29_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 5,
+      "name": "29_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 6,
+      "name": "29_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 7,
+      "name": "51_walls",
+      "material": "Wall 51"
+    },
+    {
+      "id": 8,
+      "name": "51_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 9,
+      "name": "51_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 10,
+      "name": "51_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 11,
+      "name": "51_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 12,
+      "name": "51_walls.001",
+      "material": "Wall 51"
+    },
+    {
+      "id": 13,
+      "name": "51_parapet_0_-1.001",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 14,
+      "name": "51_parapet_0_1.001",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 15,
+      "name": "51_parapet_1_-1.001",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 16,
+      "name": "51_parapet_1_1.001",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 17,
+      "name": "51_walls.002",
+      "material": "Wall 51"
+    },
+    {
+      "id": 18,
+      "name": "51_parapet_0_-1.002",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 19,
+      "name": "51_parapet_0_1.002",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 20,
+      "name": "51_parapet_1_-1.002",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 21,
+      "name": "51_parapet_1_1.002",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 22,
+      "name": "36_walls",
+      "material": "Wall 36"
+    },
+    {
+      "id": 23,
+      "name": "36_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 24,
+      "name": "36_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 25,
+      "name": "36_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 26,
+      "name": "36_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 27,
+      "name": "49_walls",
+      "material": "Wall 49"
+    },
+    {
+      "id": 28,
+      "name": "49_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 29,
+      "name": "49_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 30,
+      "name": "49_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 31,
+      "name": "49_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 32,
+      "name": "14_walls",
+      "material": "Wall 14"
+    },
+    {
+      "id": 33,
+      "name": "14_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 34,
+      "name": "14_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 35,
+      "name": "14_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 36,
+      "name": "14_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 37,
+      "name": "99_walls",
+      "material": "Wall 99"
+    },
+    {
+      "id": 38,
+      "name": "99_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 39,
+      "name": "99_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 40,
+      "name": "99_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 41,
+      "name": "99_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 42,
+      "name": "38_walls",
+      "material": "Wall 38"
+    },
+    {
+      "id": 43,
+      "name": "38_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 44,
+      "name": "38_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 45,
+      "name": "38_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 46,
+      "name": "38_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 47,
+      "name": "38_walls.001",
+      "material": "Wall 38"
+    },
+    {
+      "id": 48,
+      "name": "38_parapet_0_-1.001",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 49,
+      "name": "38_parapet_0_1.001",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 50,
+      "name": "38_parapet_1_-1.001",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 51,
+      "name": "38_parapet_1_1.001",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 52,
+      "name": "38_walls.002",
+      "material": "Wall 38"
+    },
+    {
+      "id": 53,
+      "name": "38_parapet_0_-1.002",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 54,
+      "name": "38_parapet_0_1.002",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 55,
+      "name": "38_parapet_1_-1.002",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 56,
+      "name": "38_parapet_1_1.002",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 57,
+      "name": "1_walls",
+      "material": "Wall 1"
+    },
+    {
+      "id": 58,
+      "name": "1_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 59,
+      "name": "1_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 60,
+      "name": "1_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 61,
+      "name": "1_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 62,
+      "name": "23_walls",
+      "material": "Wall 23"
+    },
+    {
+      "id": 63,
+      "name": "23_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 64,
+      "name": "23_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 65,
+      "name": "23_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 66,
+      "name": "23_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 67,
+      "name": "23_walls.001",
+      "material": "Wall 23"
+    },
+    {
+      "id": 68,
+      "name": "23_parapet_0_-1.001",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 69,
+      "name": "23_parapet_0_1.001",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 70,
+      "name": "23_parapet_1_-1.001",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 71,
+      "name": "23_parapet_1_1.001",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 72,
+      "name": "34_walls",
+      "material": "Wall 34"
+    },
+    {
+      "id": 73,
+      "name": "34_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 74,
+      "name": "34_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 75,
+      "name": "34_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 76,
+      "name": "34_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 77,
+      "name": "52_walls",
+      "material": "Wall 52"
+    },
+    {
+      "id": 78,
+      "name": "52_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 79,
+      "name": "52_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 80,
+      "name": "52_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 81,
+      "name": "52_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 82,
+      "name": "124_walls",
+      "material": "Wall 124"
+    },
+    {
+      "id": 83,
+      "name": "124_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 84,
+      "name": "124_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 85,
+      "name": "124_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 86,
+      "name": "124_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 87,
+      "name": "31_walls",
+      "material": "Wall 31"
+    },
+    {
+      "id": 88,
+      "name": "31_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 89,
+      "name": "31_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 90,
+      "name": "31_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 91,
+      "name": "31_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 92,
+      "name": "108_walls",
+      "material": "Wall 108"
+    },
+    {
+      "id": 93,
+      "name": "108_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 94,
+      "name": "108_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 95,
+      "name": "108_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 96,
+      "name": "108_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 97,
+      "name": "88_shed_roof",
+      "material": "Shed roof"
+    },
+    {
+      "id": 98,
+      "name": "5_roof_slab",
+      "material": "Roof slab"
+    },
+    {
+      "id": 99,
+      "name": "5_parapet_0_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 100,
+      "name": "5_parapet_0_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 101,
+      "name": "5_parapet_1_-1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 102,
+      "name": "5_parapet_1_1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 103,
+      "name": "Street tree 1_trunk",
+      "material": "Tree bark"
+    },
+    {
+      "id": 104,
+      "name": "Street tree 1_crown",
+      "material": "Tree green"
+    },
+    {
+      "id": 105,
+      "name": "Street tree 2_trunk",
+      "material": "Tree bark"
+    },
+    {
+      "id": 106,
+      "name": "Street tree 2_crown",
+      "material": "Tree green"
+    },
+    {
+      "id": 107,
+      "name": "Street tree 3_trunk",
+      "material": "Tree bark"
+    },
+    {
+      "id": 108,
+      "name": "Street tree 3_crown",
+      "material": "Tree green"
+    },
+    {
+      "id": 109,
+      "name": "Street tree 4_trunk",
+      "material": "Tree bark"
+    },
+    {
+      "id": 110,
+      "name": "Street tree 4_crown",
+      "material": "Tree green"
+    },
+    {
+      "id": 111,
+      "name": "Street lamp 1_pole",
+      "material": "Lamp metal"
+    },
+    {
+      "id": 112,
+      "name": "Street lamp 1_arm",
+      "material": "Lamp metal"
+    },
+    {
+      "id": 113,
+      "name": "Street lamp 1_head",
+      "material": "Lamp white"
+    },
+    {
+      "id": 114,
+      "name": "Street lamp 2_pole",
+      "material": "Lamp metal"
+    },
+    {
+      "id": 115,
+      "name": "Street lamp 2_arm",
+      "material": "Lamp metal"
+    },
+    {
+      "id": 116,
+      "name": "Street lamp 2_head",
+      "material": "Lamp white"
+    },
+    {
+      "id": 117,
+      "name": "Street lamp 3_pole",
+      "material": "Lamp metal"
+    },
+    {
+      "id": 118,
+      "name": "Street lamp 3_arm",
+      "material": "Lamp metal"
+    },
+    {
+      "id": 119,
+      "name": "Street lamp 3_head",
+      "material": "Lamp white"
+    },
+    {
+      "id": 120,
+      "name": "Paved platform beneath terrace and vent",
+      "material": "Terrace paving"
+    },
+    {
+      "id": 121,
+      "name": "Terrace red wall 1",
+      "material": "Terrace red"
+    },
+    {
+      "id": 122,
+      "name": "Terrace cream coping 1",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 123,
+      "name": "Terrace red wall 2",
+      "material": "Terrace red"
+    },
+    {
+      "id": 124,
+      "name": "Terrace cream coping 2",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 125,
+      "name": "Vent cream plinth",
+      "material": "Roof parapet"
+    },
+    {
+      "id": 126,
+      "name": "Cyan rooftop vent",
+      "material": "Vent cyan"
+    },
+    {
+      "id": 127,
+      "name": "Detached road ramp",
+      "material": "Road ramp"
+    }
+  ],
+  "limitation": "Closed low-poly geometry approximates sprite silhouettes; four separated occupied intervals retained, no invented volume across air gaps."
+}

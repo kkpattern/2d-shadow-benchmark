@@ -1,0 +1,60 @@
+{
+  "blenderVersion": "5.2.2 LTS",
+  "passed": true,
+  "intervalChecks": "Ordered, disjoint, contiguous valid layers; no overflow; bounded depth; finite normalized normals.",
+  "independentBvhDepthSamples": 4096,
+  "maxDepthError": 7.972228333130715e-05,
+  "quantizationUnit": 0.00015259021896696422,
+  "maxReprojectionError": 4.996003610813204e-16,
+  "syntheticGapTests": 4,
+  "shadowComparisons": [
+    {
+      "azimuth": -40,
+      "elevation": 40,
+      "samples": 4096,
+      "agreement": 0.98974609375,
+      "falseShadow": 1,
+      "missedShadow": 41,
+      "groundSamples": 2152,
+      "groundAgreement": 0.9907063197026023,
+      "groundTruthShadowPixels": 552,
+      "note": "CPU equivalent of hard-shadow shader vs independent Blender BVH; includes silhouette/normal quantization errors."
+    },
+    {
+      "azimuth": 140,
+      "elevation": 40,
+      "samples": 4096,
+      "agreement": 0.985107421875,
+      "falseShadow": 4,
+      "missedShadow": 57,
+      "groundSamples": 2152,
+      "groundAgreement": 0.9860594795539034,
+      "groundTruthShadowPixels": 496,
+      "note": "CPU equivalent of hard-shadow shader vs independent Blender BVH; includes silhouette/normal quantization errors."
+    },
+    {
+      "azimuth": -70,
+      "elevation": 23,
+      "samples": 4096,
+      "agreement": 0.978271484375,
+      "falseShadow": 1,
+      "missedShadow": 88,
+      "groundSamples": 2152,
+      "groundAgreement": 0.979089219330855,
+      "groundTruthShadowPixels": 940,
+      "note": "CPU equivalent of hard-shadow shader vs independent Blender BVH; includes silhouette/normal quantization errors."
+    },
+    {
+      "azimuth": -10,
+      "elevation": 78,
+      "samples": 4096,
+      "agreement": 0.99462890625,
+      "falseShadow": 12,
+      "missedShadow": 10,
+      "groundSamples": 2152,
+      "groundAgreement": 0.9981412639405205,
+      "groundTruthShadowPixels": 107,
+      "note": "CPU equivalent of hard-shadow shader vs independent Blender BVH; includes silhouette/normal quantization errors."
+    }
+  ]
+}

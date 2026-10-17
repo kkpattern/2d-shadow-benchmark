@@ -1,0 +1,1572 @@
+[
+  {
+    "asset": "buildingTiles_000.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_000_prototype_walls_mesh",
+      "buildingTiles_000_prototype_parapet_0_-1_mesh",
+      "buildingTiles_000_prototype_parapet_0_1_mesh",
+      "buildingTiles_000_prototype_parapet_1_-1_mesh",
+      "buildingTiles_000_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_001.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_001_prototype_walls_mesh",
+      "buildingTiles_001_prototype_parapet_0_-1_mesh",
+      "buildingTiles_001_prototype_parapet_0_1_mesh",
+      "buildingTiles_001_prototype_parapet_1_-1_mesh",
+      "buildingTiles_001_prototype_parapet_1_1_mesh",
+      "buildingTiles_001_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_002.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_002_prototype_walls_mesh",
+      "buildingTiles_002_prototype_parapet_0_-1_mesh",
+      "buildingTiles_002_prototype_parapet_0_1_mesh",
+      "buildingTiles_002_prototype_parapet_1_-1_mesh",
+      "buildingTiles_002_prototype_parapet_1_1_mesh",
+      "buildingTiles_002_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_003.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_003_prototype_walls_mesh",
+      "buildingTiles_003_prototype_parapet_0_-1_mesh",
+      "buildingTiles_003_prototype_parapet_0_1_mesh",
+      "buildingTiles_003_prototype_parapet_1_-1_mesh",
+      "buildingTiles_003_prototype_parapet_1_1_mesh",
+      "buildingTiles_003_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_004.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_004_prototype_walls_mesh",
+      "buildingTiles_004_prototype_parapet_0_-1_mesh",
+      "buildingTiles_004_prototype_parapet_0_1_mesh",
+      "buildingTiles_004_prototype_parapet_1_-1_mesh",
+      "buildingTiles_004_prototype_parapet_1_1_mesh",
+      "buildingTiles_004_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_005.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 54,
+    "meshes": [
+      "buildingTiles_005_prototype_roof_slab_mesh",
+      "buildingTiles_005_prototype_parapet_0_-1_mesh",
+      "buildingTiles_005_prototype_parapet_0_1_mesh",
+      "buildingTiles_005_prototype_parapet_1_-1_mesh",
+      "buildingTiles_005_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_006.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 54,
+    "meshes": [
+      "buildingTiles_006_prototype_roof_slab_mesh",
+      "buildingTiles_006_prototype_parapet_0_-1_mesh",
+      "buildingTiles_006_prototype_parapet_0_1_mesh",
+      "buildingTiles_006_prototype_parapet_1_-1_mesh",
+      "buildingTiles_006_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_007.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_007_prototype_walls_mesh",
+      "buildingTiles_007_prototype_parapet_0_-1_mesh",
+      "buildingTiles_007_prototype_parapet_0_1_mesh",
+      "buildingTiles_007_prototype_parapet_1_-1_mesh",
+      "buildingTiles_007_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_008.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_008_prototype_walls_mesh",
+      "buildingTiles_008_prototype_parapet_0_-1_mesh",
+      "buildingTiles_008_prototype_parapet_0_1_mesh",
+      "buildingTiles_008_prototype_parapet_1_-1_mesh",
+      "buildingTiles_008_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_009.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_009_prototype_walls_mesh",
+      "buildingTiles_009_prototype_parapet_0_-1_mesh",
+      "buildingTiles_009_prototype_parapet_0_1_mesh",
+      "buildingTiles_009_prototype_parapet_1_-1_mesh",
+      "buildingTiles_009_prototype_parapet_1_1_mesh",
+      "buildingTiles_009_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_010.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_010_prototype_walls_mesh",
+      "buildingTiles_010_prototype_parapet_0_-1_mesh",
+      "buildingTiles_010_prototype_parapet_0_1_mesh",
+      "buildingTiles_010_prototype_parapet_1_-1_mesh",
+      "buildingTiles_010_prototype_parapet_1_1_mesh",
+      "buildingTiles_010_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_011.png",
+    "kind": "base",
+    "width": 132,
+    "height": 128,
+    "meshes": [
+      "buildingTiles_011_prototype_walls_mesh",
+      "buildingTiles_011_prototype_parapet_0_-1_mesh",
+      "buildingTiles_011_prototype_parapet_0_1_mesh",
+      "buildingTiles_011_prototype_parapet_1_-1_mesh",
+      "buildingTiles_011_prototype_parapet_1_1_mesh",
+      "buildingTiles_011_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_012.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_012_prototype_walls_mesh",
+      "buildingTiles_012_prototype_parapet_0_-1_mesh",
+      "buildingTiles_012_prototype_parapet_0_1_mesh",
+      "buildingTiles_012_prototype_parapet_1_-1_mesh",
+      "buildingTiles_012_prototype_parapet_1_1_mesh",
+      "buildingTiles_012_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_013.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 54,
+    "meshes": [
+      "buildingTiles_013_prototype_roof_slab_mesh",
+      "buildingTiles_013_prototype_parapet_0_-1_mesh",
+      "buildingTiles_013_prototype_parapet_0_1_mesh",
+      "buildingTiles_013_prototype_parapet_1_-1_mesh",
+      "buildingTiles_013_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_014.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_014_prototype_walls_mesh",
+      "buildingTiles_014_prototype_parapet_0_-1_mesh",
+      "buildingTiles_014_prototype_parapet_0_1_mesh",
+      "buildingTiles_014_prototype_parapet_1_-1_mesh",
+      "buildingTiles_014_prototype_parapet_1_1_mesh",
+      "buildingTiles_014_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_015.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_015_prototype_walls_mesh",
+      "buildingTiles_015_prototype_parapet_0_-1_mesh",
+      "buildingTiles_015_prototype_parapet_0_1_mesh",
+      "buildingTiles_015_prototype_parapet_1_-1_mesh",
+      "buildingTiles_015_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_016.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_016_prototype_walls_mesh",
+      "buildingTiles_016_prototype_parapet_0_-1_mesh",
+      "buildingTiles_016_prototype_parapet_0_1_mesh",
+      "buildingTiles_016_prototype_parapet_1_-1_mesh",
+      "buildingTiles_016_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_017.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_017_prototype_walls_mesh",
+      "buildingTiles_017_prototype_parapet_0_-1_mesh",
+      "buildingTiles_017_prototype_parapet_0_1_mesh",
+      "buildingTiles_017_prototype_parapet_1_-1_mesh",
+      "buildingTiles_017_prototype_parapet_1_1_mesh",
+      "buildingTiles_017_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_018.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_018_prototype_walls_mesh",
+      "buildingTiles_018_prototype_parapet_0_-1_mesh",
+      "buildingTiles_018_prototype_parapet_0_1_mesh",
+      "buildingTiles_018_prototype_parapet_1_-1_mesh",
+      "buildingTiles_018_prototype_parapet_1_1_mesh",
+      "buildingTiles_018_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_019.png",
+    "kind": "base",
+    "width": 132,
+    "height": 128,
+    "meshes": [
+      "buildingTiles_019_prototype_walls_mesh",
+      "buildingTiles_019_prototype_parapet_0_-1_mesh",
+      "buildingTiles_019_prototype_parapet_0_1_mesh",
+      "buildingTiles_019_prototype_parapet_1_-1_mesh",
+      "buildingTiles_019_prototype_parapet_1_1_mesh",
+      "buildingTiles_019_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_020.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_020_prototype_walls_mesh",
+      "buildingTiles_020_prototype_parapet_0_-1_mesh",
+      "buildingTiles_020_prototype_parapet_0_1_mesh",
+      "buildingTiles_020_prototype_parapet_1_-1_mesh",
+      "buildingTiles_020_prototype_parapet_1_1_mesh",
+      "buildingTiles_020_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_021.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_021_prototype_walls_mesh",
+      "buildingTiles_021_prototype_parapet_0_-1_mesh",
+      "buildingTiles_021_prototype_parapet_0_1_mesh",
+      "buildingTiles_021_prototype_parapet_1_-1_mesh",
+      "buildingTiles_021_prototype_parapet_1_1_mesh",
+      "buildingTiles_021_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_022.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_022_prototype_walls_mesh",
+      "buildingTiles_022_prototype_parapet_0_-1_mesh",
+      "buildingTiles_022_prototype_parapet_0_1_mesh",
+      "buildingTiles_022_prototype_parapet_1_-1_mesh",
+      "buildingTiles_022_prototype_parapet_1_1_mesh",
+      "buildingTiles_022_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_023.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_023_prototype_walls_mesh",
+      "buildingTiles_023_prototype_parapet_0_-1_mesh",
+      "buildingTiles_023_prototype_parapet_0_1_mesh",
+      "buildingTiles_023_prototype_parapet_1_-1_mesh",
+      "buildingTiles_023_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_024.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_024_prototype_walls_mesh",
+      "buildingTiles_024_prototype_parapet_0_-1_mesh",
+      "buildingTiles_024_prototype_parapet_0_1_mesh",
+      "buildingTiles_024_prototype_parapet_1_-1_mesh",
+      "buildingTiles_024_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_025.png",
+    "kind": "base",
+    "width": 132,
+    "height": 128,
+    "meshes": [
+      "buildingTiles_025_prototype_walls_mesh",
+      "buildingTiles_025_prototype_parapet_0_-1_mesh",
+      "buildingTiles_025_prototype_parapet_0_1_mesh",
+      "buildingTiles_025_prototype_parapet_1_-1_mesh",
+      "buildingTiles_025_prototype_parapet_1_1_mesh",
+      "buildingTiles_025_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_026.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_026_prototype_walls_mesh",
+      "buildingTiles_026_prototype_parapet_0_-1_mesh",
+      "buildingTiles_026_prototype_parapet_0_1_mesh",
+      "buildingTiles_026_prototype_parapet_1_-1_mesh",
+      "buildingTiles_026_prototype_parapet_1_1_mesh",
+      "buildingTiles_026_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_027.png",
+    "kind": "base",
+    "width": 132,
+    "height": 130,
+    "meshes": [
+      "buildingTiles_027_prototype_walls_mesh",
+      "buildingTiles_027_prototype_parapet_0_-1_mesh",
+      "buildingTiles_027_prototype_parapet_0_1_mesh",
+      "buildingTiles_027_prototype_parapet_1_-1_mesh",
+      "buildingTiles_027_prototype_parapet_1_1_mesh",
+      "buildingTiles_027_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_028.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_028_prototype_walls_mesh",
+      "buildingTiles_028_prototype_parapet_0_-1_mesh",
+      "buildingTiles_028_prototype_parapet_0_1_mesh",
+      "buildingTiles_028_prototype_parapet_1_-1_mesh",
+      "buildingTiles_028_prototype_parapet_1_1_mesh",
+      "buildingTiles_028_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_029.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_029_prototype_walls_mesh",
+      "buildingTiles_029_prototype_parapet_0_-1_mesh",
+      "buildingTiles_029_prototype_parapet_0_1_mesh",
+      "buildingTiles_029_prototype_parapet_1_-1_mesh",
+      "buildingTiles_029_prototype_parapet_1_1_mesh",
+      "buildingTiles_029_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_030.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_030_prototype_walls_mesh",
+      "buildingTiles_030_prototype_parapet_0_-1_mesh",
+      "buildingTiles_030_prototype_parapet_0_1_mesh",
+      "buildingTiles_030_prototype_parapet_1_-1_mesh",
+      "buildingTiles_030_prototype_parapet_1_1_mesh",
+      "buildingTiles_030_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_031.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_031_prototype_walls_mesh",
+      "buildingTiles_031_prototype_parapet_0_-1_mesh",
+      "buildingTiles_031_prototype_parapet_0_1_mesh",
+      "buildingTiles_031_prototype_parapet_1_-1_mesh",
+      "buildingTiles_031_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_032.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_032_prototype_walls_mesh",
+      "buildingTiles_032_prototype_parapet_0_-1_mesh",
+      "buildingTiles_032_prototype_parapet_0_1_mesh",
+      "buildingTiles_032_prototype_parapet_1_-1_mesh",
+      "buildingTiles_032_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_033.png",
+    "kind": "base",
+    "width": 132,
+    "height": 128,
+    "meshes": [
+      "buildingTiles_033_prototype_walls_mesh",
+      "buildingTiles_033_prototype_parapet_0_-1_mesh",
+      "buildingTiles_033_prototype_parapet_0_1_mesh",
+      "buildingTiles_033_prototype_parapet_1_-1_mesh",
+      "buildingTiles_033_prototype_parapet_1_1_mesh",
+      "buildingTiles_033_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_034.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_034_prototype_walls_mesh",
+      "buildingTiles_034_prototype_parapet_0_-1_mesh",
+      "buildingTiles_034_prototype_parapet_0_1_mesh",
+      "buildingTiles_034_prototype_parapet_1_-1_mesh",
+      "buildingTiles_034_prototype_parapet_1_1_mesh",
+      "buildingTiles_034_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_035.png",
+    "kind": "base",
+    "width": 132,
+    "height": 130,
+    "meshes": [
+      "buildingTiles_035_prototype_walls_mesh",
+      "buildingTiles_035_prototype_parapet_0_-1_mesh",
+      "buildingTiles_035_prototype_parapet_0_1_mesh",
+      "buildingTiles_035_prototype_parapet_1_-1_mesh",
+      "buildingTiles_035_prototype_parapet_1_1_mesh",
+      "buildingTiles_035_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_036.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_036_prototype_walls_mesh",
+      "buildingTiles_036_prototype_parapet_0_-1_mesh",
+      "buildingTiles_036_prototype_parapet_0_1_mesh",
+      "buildingTiles_036_prototype_parapet_1_-1_mesh",
+      "buildingTiles_036_prototype_parapet_1_1_mesh",
+      "buildingTiles_036_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_037.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_037_prototype_walls_mesh",
+      "buildingTiles_037_prototype_parapet_0_-1_mesh",
+      "buildingTiles_037_prototype_parapet_0_1_mesh",
+      "buildingTiles_037_prototype_parapet_1_-1_mesh",
+      "buildingTiles_037_prototype_parapet_1_1_mesh",
+      "buildingTiles_037_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_038.png",
+    "kind": "story",
+    "width": 100,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_038_prototype_walls_mesh",
+      "buildingTiles_038_prototype_parapet_0_-1_mesh",
+      "buildingTiles_038_prototype_parapet_0_1_mesh",
+      "buildingTiles_038_prototype_parapet_1_-1_mesh",
+      "buildingTiles_038_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_039.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_039_prototype_walls_mesh",
+      "buildingTiles_039_prototype_parapet_0_-1_mesh",
+      "buildingTiles_039_prototype_parapet_0_1_mesh",
+      "buildingTiles_039_prototype_parapet_1_-1_mesh",
+      "buildingTiles_039_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_040.png",
+    "kind": "base",
+    "width": 132,
+    "height": 130,
+    "meshes": [
+      "buildingTiles_040_prototype_walls_mesh",
+      "buildingTiles_040_prototype_parapet_0_-1_mesh",
+      "buildingTiles_040_prototype_parapet_0_1_mesh",
+      "buildingTiles_040_prototype_parapet_1_-1_mesh",
+      "buildingTiles_040_prototype_parapet_1_1_mesh",
+      "buildingTiles_040_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_041.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_041_prototype_walls_mesh",
+      "buildingTiles_041_prototype_parapet_0_-1_mesh",
+      "buildingTiles_041_prototype_parapet_0_1_mesh",
+      "buildingTiles_041_prototype_parapet_1_-1_mesh",
+      "buildingTiles_041_prototype_parapet_1_1_mesh",
+      "buildingTiles_041_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_042.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_042_prototype_walls_mesh",
+      "buildingTiles_042_prototype_parapet_0_-1_mesh",
+      "buildingTiles_042_prototype_parapet_0_1_mesh",
+      "buildingTiles_042_prototype_parapet_1_-1_mesh",
+      "buildingTiles_042_prototype_parapet_1_1_mesh",
+      "buildingTiles_042_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_043.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_043_prototype_walls_mesh",
+      "buildingTiles_043_prototype_parapet_0_-1_mesh",
+      "buildingTiles_043_prototype_parapet_0_1_mesh",
+      "buildingTiles_043_prototype_parapet_1_-1_mesh",
+      "buildingTiles_043_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_044.png",
+    "kind": "story",
+    "width": 100,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_044_prototype_walls_mesh",
+      "buildingTiles_044_prototype_parapet_0_-1_mesh",
+      "buildingTiles_044_prototype_parapet_0_1_mesh",
+      "buildingTiles_044_prototype_parapet_1_-1_mesh",
+      "buildingTiles_044_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_045.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_045_prototype_walls_mesh",
+      "buildingTiles_045_prototype_parapet_0_-1_mesh",
+      "buildingTiles_045_prototype_parapet_0_1_mesh",
+      "buildingTiles_045_prototype_parapet_1_-1_mesh",
+      "buildingTiles_045_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_046.png",
+    "kind": "base",
+    "width": 132,
+    "height": 130,
+    "meshes": [
+      "buildingTiles_046_prototype_walls_mesh",
+      "buildingTiles_046_prototype_parapet_0_-1_mesh",
+      "buildingTiles_046_prototype_parapet_0_1_mesh",
+      "buildingTiles_046_prototype_parapet_1_-1_mesh",
+      "buildingTiles_046_prototype_parapet_1_1_mesh",
+      "buildingTiles_046_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_047.png",
+    "kind": "story",
+    "width": 100,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_047_prototype_walls_mesh",
+      "buildingTiles_047_prototype_parapet_0_-1_mesh",
+      "buildingTiles_047_prototype_parapet_0_1_mesh",
+      "buildingTiles_047_prototype_parapet_1_-1_mesh",
+      "buildingTiles_047_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_048.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_048_prototype_walls_mesh",
+      "buildingTiles_048_prototype_parapet_0_-1_mesh",
+      "buildingTiles_048_prototype_parapet_0_1_mesh",
+      "buildingTiles_048_prototype_parapet_1_-1_mesh",
+      "buildingTiles_048_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_049.png",
+    "kind": "story",
+    "width": 100,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_049_prototype_walls_mesh",
+      "buildingTiles_049_prototype_parapet_0_-1_mesh",
+      "buildingTiles_049_prototype_parapet_0_1_mesh",
+      "buildingTiles_049_prototype_parapet_1_-1_mesh",
+      "buildingTiles_049_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_050.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_050_prototype_walls_mesh",
+      "buildingTiles_050_prototype_parapet_0_-1_mesh",
+      "buildingTiles_050_prototype_parapet_0_1_mesh",
+      "buildingTiles_050_prototype_parapet_1_-1_mesh",
+      "buildingTiles_050_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_051.png",
+    "kind": "story",
+    "width": 100,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_051_prototype_walls_mesh",
+      "buildingTiles_051_prototype_parapet_0_-1_mesh",
+      "buildingTiles_051_prototype_parapet_0_1_mesh",
+      "buildingTiles_051_prototype_parapet_1_-1_mesh",
+      "buildingTiles_051_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_052.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_052_prototype_walls_mesh",
+      "buildingTiles_052_prototype_parapet_0_-1_mesh",
+      "buildingTiles_052_prototype_parapet_0_1_mesh",
+      "buildingTiles_052_prototype_parapet_1_-1_mesh",
+      "buildingTiles_052_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_053.png",
+    "kind": "story",
+    "width": 100,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_053_prototype_walls_mesh",
+      "buildingTiles_053_prototype_parapet_0_-1_mesh",
+      "buildingTiles_053_prototype_parapet_0_1_mesh",
+      "buildingTiles_053_prototype_parapet_1_-1_mesh",
+      "buildingTiles_053_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_054.png",
+    "kind": "story",
+    "width": 100,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_054_prototype_walls_mesh",
+      "buildingTiles_054_prototype_parapet_0_-1_mesh",
+      "buildingTiles_054_prototype_parapet_0_1_mesh",
+      "buildingTiles_054_prototype_parapet_1_-1_mesh",
+      "buildingTiles_054_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_055.png",
+    "kind": "story",
+    "width": 99,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_055_prototype_walls_mesh",
+      "buildingTiles_055_prototype_parapet_0_-1_mesh",
+      "buildingTiles_055_prototype_parapet_0_1_mesh",
+      "buildingTiles_055_prototype_parapet_1_-1_mesh",
+      "buildingTiles_055_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_056.png",
+    "kind": "story",
+    "width": 100,
+    "height": 85,
+    "meshes": [
+      "buildingTiles_056_prototype_walls_mesh",
+      "buildingTiles_056_prototype_parapet_0_-1_mesh",
+      "buildingTiles_056_prototype_parapet_0_1_mesh",
+      "buildingTiles_056_prototype_parapet_1_-1_mesh",
+      "buildingTiles_056_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_057.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_057_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_058.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_058_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_059.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_059_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_060.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_060_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_061.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_061_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_062.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_062_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_063.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_063_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_064.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_064_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_065.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 61,
+    "meshes": [
+      "buildingTiles_065_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_066.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_066_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_067.png",
+    "kind": "roof",
+    "width": 100,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_067_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_068.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_068_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_069.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_069_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_070.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 61,
+    "meshes": [
+      "buildingTiles_070_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_071.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 62,
+    "meshes": [
+      "buildingTiles_071_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_072.png",
+    "kind": "roof",
+    "width": 100,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_072_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_073.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_073_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_074.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 61,
+    "meshes": [
+      "buildingTiles_074_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_075.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_075_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_076.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 63,
+    "meshes": [
+      "buildingTiles_076_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_077.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 62,
+    "meshes": [
+      "buildingTiles_077_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_078.png",
+    "kind": "chimney",
+    "width": 13,
+    "height": 24,
+    "meshes": [
+      "buildingTiles_078_prototype_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_079.png",
+    "kind": "roof",
+    "width": 100,
+    "height": 62,
+    "meshes": [
+      "buildingTiles_079_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_080.png",
+    "kind": "roof",
+    "width": 100,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_080_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_081.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_081_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_082.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 61,
+    "meshes": [
+      "buildingTiles_082_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_083.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 61,
+    "meshes": [
+      "buildingTiles_083_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_084.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 63,
+    "meshes": [
+      "buildingTiles_084_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_085.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_085_prototype_walls_mesh",
+      "buildingTiles_085_prototype_parapet_0_-1_mesh",
+      "buildingTiles_085_prototype_parapet_0_1_mesh",
+      "buildingTiles_085_prototype_parapet_1_-1_mesh",
+      "buildingTiles_085_prototype_parapet_1_1_mesh",
+      "buildingTiles_085_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_086.png",
+    "kind": "roof",
+    "width": 100,
+    "height": 55,
+    "meshes": [
+      "buildingTiles_086_prototype_roof_slab_mesh",
+      "buildingTiles_086_prototype_parapet_0_-1_mesh",
+      "buildingTiles_086_prototype_parapet_0_1_mesh",
+      "buildingTiles_086_prototype_parapet_1_-1_mesh",
+      "buildingTiles_086_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_087.png",
+    "kind": "roof",
+    "width": 100,
+    "height": 62,
+    "meshes": [
+      "buildingTiles_087_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_088.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 61,
+    "meshes": [
+      "buildingTiles_088_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_089.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 60,
+    "meshes": [
+      "buildingTiles_089_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_090.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 63,
+    "meshes": [
+      "buildingTiles_090_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_091.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 61,
+    "meshes": [
+      "buildingTiles_091_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_092.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_092_prototype_walls_mesh",
+      "buildingTiles_092_prototype_parapet_0_-1_mesh",
+      "buildingTiles_092_prototype_parapet_0_1_mesh",
+      "buildingTiles_092_prototype_parapet_1_-1_mesh",
+      "buildingTiles_092_prototype_parapet_1_1_mesh",
+      "buildingTiles_092_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_093.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_093_prototype_walls_mesh",
+      "buildingTiles_093_prototype_parapet_0_-1_mesh",
+      "buildingTiles_093_prototype_parapet_0_1_mesh",
+      "buildingTiles_093_prototype_parapet_1_-1_mesh",
+      "buildingTiles_093_prototype_parapet_1_1_mesh",
+      "buildingTiles_093_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_094.png",
+    "kind": "roof",
+    "width": 100,
+    "height": 55,
+    "meshes": [
+      "buildingTiles_094_prototype_roof_slab_mesh",
+      "buildingTiles_094_prototype_parapet_0_-1_mesh",
+      "buildingTiles_094_prototype_parapet_0_1_mesh",
+      "buildingTiles_094_prototype_parapet_1_-1_mesh",
+      "buildingTiles_094_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_095.png",
+    "kind": "roof",
+    "width": 100,
+    "height": 55,
+    "meshes": [
+      "buildingTiles_095_prototype_roof_slab_mesh",
+      "buildingTiles_095_prototype_parapet_0_-1_mesh",
+      "buildingTiles_095_prototype_parapet_0_1_mesh",
+      "buildingTiles_095_prototype_parapet_1_-1_mesh",
+      "buildingTiles_095_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_096.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 61,
+    "meshes": [
+      "buildingTiles_096_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_097.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 61,
+    "meshes": [
+      "buildingTiles_097_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_098.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 63,
+    "meshes": [
+      "buildingTiles_098_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_099.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_099_prototype_walls_mesh",
+      "buildingTiles_099_prototype_parapet_0_-1_mesh",
+      "buildingTiles_099_prototype_parapet_0_1_mesh",
+      "buildingTiles_099_prototype_parapet_1_-1_mesh",
+      "buildingTiles_099_prototype_parapet_1_1_mesh",
+      "buildingTiles_099_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_100.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_100_prototype_walls_mesh",
+      "buildingTiles_100_prototype_parapet_0_-1_mesh",
+      "buildingTiles_100_prototype_parapet_0_1_mesh",
+      "buildingTiles_100_prototype_parapet_1_-1_mesh",
+      "buildingTiles_100_prototype_parapet_1_1_mesh",
+      "buildingTiles_100_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_101.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_101_prototype_walls_mesh",
+      "buildingTiles_101_prototype_parapet_0_-1_mesh",
+      "buildingTiles_101_prototype_parapet_0_1_mesh",
+      "buildingTiles_101_prototype_parapet_1_-1_mesh",
+      "buildingTiles_101_prototype_parapet_1_1_mesh",
+      "buildingTiles_101_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_102.png",
+    "kind": "roof",
+    "width": 100,
+    "height": 55,
+    "meshes": [
+      "buildingTiles_102_prototype_roof_slab_mesh",
+      "buildingTiles_102_prototype_parapet_0_-1_mesh",
+      "buildingTiles_102_prototype_parapet_0_1_mesh",
+      "buildingTiles_102_prototype_parapet_1_-1_mesh",
+      "buildingTiles_102_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_103.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 55,
+    "meshes": [
+      "buildingTiles_103_prototype_roof_slab_mesh",
+      "buildingTiles_103_prototype_parapet_0_-1_mesh",
+      "buildingTiles_103_prototype_parapet_0_1_mesh",
+      "buildingTiles_103_prototype_parapet_1_-1_mesh",
+      "buildingTiles_103_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_104.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 63,
+    "meshes": [
+      "buildingTiles_104_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_105.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 61,
+    "meshes": [
+      "buildingTiles_105_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_106.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_106_prototype_walls_mesh",
+      "buildingTiles_106_prototype_parapet_0_-1_mesh",
+      "buildingTiles_106_prototype_parapet_0_1_mesh",
+      "buildingTiles_106_prototype_parapet_1_-1_mesh",
+      "buildingTiles_106_prototype_parapet_1_1_mesh",
+      "buildingTiles_106_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_107.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_107_prototype_walls_mesh",
+      "buildingTiles_107_prototype_parapet_0_-1_mesh",
+      "buildingTiles_107_prototype_parapet_0_1_mesh",
+      "buildingTiles_107_prototype_parapet_1_-1_mesh",
+      "buildingTiles_107_prototype_parapet_1_1_mesh",
+      "buildingTiles_107_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_108.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_108_prototype_walls_mesh",
+      "buildingTiles_108_prototype_parapet_0_-1_mesh",
+      "buildingTiles_108_prototype_parapet_0_1_mesh",
+      "buildingTiles_108_prototype_parapet_1_-1_mesh",
+      "buildingTiles_108_prototype_parapet_1_1_mesh",
+      "buildingTiles_108_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_109.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_109_prototype_walls_mesh",
+      "buildingTiles_109_prototype_parapet_0_-1_mesh",
+      "buildingTiles_109_prototype_parapet_0_1_mesh",
+      "buildingTiles_109_prototype_parapet_1_-1_mesh",
+      "buildingTiles_109_prototype_parapet_1_1_mesh",
+      "buildingTiles_109_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_110.png",
+    "kind": "roof",
+    "width": 100,
+    "height": 55,
+    "meshes": [
+      "buildingTiles_110_prototype_roof_slab_mesh",
+      "buildingTiles_110_prototype_parapet_0_-1_mesh",
+      "buildingTiles_110_prototype_parapet_0_1_mesh",
+      "buildingTiles_110_prototype_parapet_1_-1_mesh",
+      "buildingTiles_110_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_111.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 55,
+    "meshes": [
+      "buildingTiles_111_prototype_roof_slab_mesh",
+      "buildingTiles_111_prototype_parapet_0_-1_mesh",
+      "buildingTiles_111_prototype_parapet_0_1_mesh",
+      "buildingTiles_111_prototype_parapet_1_-1_mesh",
+      "buildingTiles_111_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_112.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 63,
+    "meshes": [
+      "buildingTiles_112_prototype_shed_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_113.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_113_prototype_walls_mesh",
+      "buildingTiles_113_prototype_parapet_0_-1_mesh",
+      "buildingTiles_113_prototype_parapet_0_1_mesh",
+      "buildingTiles_113_prototype_parapet_1_-1_mesh",
+      "buildingTiles_113_prototype_parapet_1_1_mesh",
+      "buildingTiles_113_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_114.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_114_prototype_walls_mesh",
+      "buildingTiles_114_prototype_parapet_0_-1_mesh",
+      "buildingTiles_114_prototype_parapet_0_1_mesh",
+      "buildingTiles_114_prototype_parapet_1_-1_mesh",
+      "buildingTiles_114_prototype_parapet_1_1_mesh",
+      "buildingTiles_114_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_115.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_115_prototype_walls_mesh",
+      "buildingTiles_115_prototype_parapet_0_-1_mesh",
+      "buildingTiles_115_prototype_parapet_0_1_mesh",
+      "buildingTiles_115_prototype_parapet_1_-1_mesh",
+      "buildingTiles_115_prototype_parapet_1_1_mesh",
+      "buildingTiles_115_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_116.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_116_prototype_walls_mesh",
+      "buildingTiles_116_prototype_parapet_0_-1_mesh",
+      "buildingTiles_116_prototype_parapet_0_1_mesh",
+      "buildingTiles_116_prototype_parapet_1_-1_mesh",
+      "buildingTiles_116_prototype_parapet_1_1_mesh",
+      "buildingTiles_116_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_117.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_117_prototype_walls_mesh",
+      "buildingTiles_117_prototype_parapet_0_-1_mesh",
+      "buildingTiles_117_prototype_parapet_0_1_mesh",
+      "buildingTiles_117_prototype_parapet_1_-1_mesh",
+      "buildingTiles_117_prototype_parapet_1_1_mesh",
+      "buildingTiles_117_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_118.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 54,
+    "meshes": [
+      "buildingTiles_118_prototype_roof_slab_mesh",
+      "buildingTiles_118_prototype_parapet_0_-1_mesh",
+      "buildingTiles_118_prototype_parapet_0_1_mesh",
+      "buildingTiles_118_prototype_parapet_1_-1_mesh",
+      "buildingTiles_118_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_119.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 54,
+    "meshes": [
+      "buildingTiles_119_prototype_roof_slab_mesh",
+      "buildingTiles_119_prototype_parapet_0_-1_mesh",
+      "buildingTiles_119_prototype_parapet_0_1_mesh",
+      "buildingTiles_119_prototype_parapet_1_-1_mesh",
+      "buildingTiles_119_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_120.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 56,
+    "meshes": [
+      "buildingTiles_120_prototype_roof_slab_mesh",
+      "buildingTiles_120_prototype_parapet_0_-1_mesh",
+      "buildingTiles_120_prototype_parapet_0_1_mesh",
+      "buildingTiles_120_prototype_parapet_1_-1_mesh",
+      "buildingTiles_120_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_121.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 54,
+    "meshes": [
+      "buildingTiles_121_prototype_roof_slab_mesh",
+      "buildingTiles_121_prototype_parapet_0_-1_mesh",
+      "buildingTiles_121_prototype_parapet_0_1_mesh",
+      "buildingTiles_121_prototype_parapet_1_-1_mesh",
+      "buildingTiles_121_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_122.png",
+    "kind": "base",
+    "width": 133,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_122_prototype_walls_mesh",
+      "buildingTiles_122_prototype_parapet_0_-1_mesh",
+      "buildingTiles_122_prototype_parapet_0_1_mesh",
+      "buildingTiles_122_prototype_parapet_1_-1_mesh",
+      "buildingTiles_122_prototype_parapet_1_1_mesh",
+      "buildingTiles_122_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_123.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_123_prototype_walls_mesh",
+      "buildingTiles_123_prototype_parapet_0_-1_mesh",
+      "buildingTiles_123_prototype_parapet_0_1_mesh",
+      "buildingTiles_123_prototype_parapet_1_-1_mesh",
+      "buildingTiles_123_prototype_parapet_1_1_mesh",
+      "buildingTiles_123_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_124.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_124_prototype_walls_mesh",
+      "buildingTiles_124_prototype_parapet_0_-1_mesh",
+      "buildingTiles_124_prototype_parapet_0_1_mesh",
+      "buildingTiles_124_prototype_parapet_1_-1_mesh",
+      "buildingTiles_124_prototype_parapet_1_1_mesh",
+      "buildingTiles_124_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_125.png",
+    "kind": "base",
+    "width": 132,
+    "height": 127,
+    "meshes": [
+      "buildingTiles_125_prototype_walls_mesh",
+      "buildingTiles_125_prototype_parapet_0_-1_mesh",
+      "buildingTiles_125_prototype_parapet_0_1_mesh",
+      "buildingTiles_125_prototype_parapet_1_-1_mesh",
+      "buildingTiles_125_prototype_parapet_1_1_mesh",
+      "buildingTiles_125_prototype_sidewalk_foundation_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_126.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 54,
+    "meshes": [
+      "buildingTiles_126_prototype_roof_slab_mesh",
+      "buildingTiles_126_prototype_parapet_0_-1_mesh",
+      "buildingTiles_126_prototype_parapet_0_1_mesh",
+      "buildingTiles_126_prototype_parapet_1_-1_mesh",
+      "buildingTiles_126_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_127.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 54,
+    "meshes": [
+      "buildingTiles_127_prototype_roof_slab_mesh",
+      "buildingTiles_127_prototype_parapet_0_-1_mesh",
+      "buildingTiles_127_prototype_parapet_0_1_mesh",
+      "buildingTiles_127_prototype_parapet_1_-1_mesh",
+      "buildingTiles_127_prototype_parapet_1_1_mesh"
+    ]
+  },
+  {
+    "asset": "buildingTiles_128.png",
+    "kind": "roof",
+    "width": 99,
+    "height": 54,
+    "meshes": [
+      "buildingTiles_128_prototype_roof_slab_mesh",
+      "buildingTiles_128_prototype_parapet_0_-1_mesh",
+      "buildingTiles_128_prototype_parapet_0_1_mesh",
+      "buildingTiles_128_prototype_parapet_1_-1_mesh",
+      "buildingTiles_128_prototype_parapet_1_1_mesh"
+    ]
+  }
+]

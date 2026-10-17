@@ -1,0 +1,72 @@
+import { chromium } from 'playwright';
+import { mkdir, writeFile, readFile } from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import path from 'node:path';
+
+const baseURL = process.env.TEST_URL || 'http://127.0.0.1:5173';
+const browserPath = process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
+await mkdir('verification', { recursive: true });
+const browser = await chromium.launch({ executablePath: browserPath, headless: true, downloadsPath: path.resolve('verification/downloads'), args: ['--enable-webgl', '--ignore-gpu-blocklist', '--enable-unsafe-swiftshader'] });
+const errors = [];
+const page = await browser.newPage({ viewport: { width: 1440, height: 1080 }, deviceScaleFactor: 1, acceptDownloads: true });
+page.on('pageerror', (error) => errors.push(error.message));
+page.on('console', (message) => { if (message.type() === 'error') errors.push(message.text()); });
+page.on('response', (response) => { if (response.status() >= 400) errors.push(`${response.status()}: ${response.url()}`); });
+try {
+  await page.goto(baseURL, { waitUntil: 'networkidle', timeout: 60000 });
+  await page.waitForFunction(() => window.shadowStudy?.ready, { timeout: 60000 });
+  async function capture(name, state) {
+    if (state) await page.evaluate((values) => window.shadowStudy.set(values), state);
+    const data = await page.evaluate(() => window.shadowStudy.capture());
+    await writeFile(`verification/${name}.png`, Buffer.from(data.split(',')[1], 'base64'));
+    return data;
+  }
+  const a = await capture('scene-default', { azimuth: 135, elevation: 42, softness: 2, enabled: true, view: 0, animate: false });
+  await page.screenshot({ path: 'verification/desktop.png', fullPage: true });
+  const noShadow = await capture('scene-no-shadows', { enabled: false });
+  assert.notEqual(a, noShadow, 'Shadows must change actual rendered pixels');
+  const otherSun = await capture('scene-opposite-sun', { enabled: true, azimuth: 45, elevation: 24 });
+  assert.notEqual(a, otherSun, 'Sun direction must change the rendered scene');
+  await capture('scene-back-lit', { azimuth: 225, elevation: 42 });
+  for (let view = 1; view <= 4; view++) await capture(['', 'depth', 'thickness', 'normals', 'shadow-mask'][view], { view, azimuth: 135, elevation: 42 });
+  const hard = await capture('shadow-hard', { view: 4, softness: 0 });
+  const soft = await capture('shadow-soft', { softness: 6 });
+  assert.notEqual(hard, soft, 'Angular source size must change shadow edges');
+  await page.getByRole('button', { name: 'Scene', exact: true }).click();
+  await page.locator('#reset').click();
+  assert.equal(await page.locator('#azimuth').inputValue(), '225');
+  await page.locator('#azimuth').fill('300');
+  await page.locator('#azimuth').dispatchEvent('input');
+  assert.equal(await page.locator('#azimuth-value').textContent(), '300°');
+  await page.locator('#compare').click();
+  assert.equal(await page.locator('#reference-image').isVisible(), true);
+  await page.locator('#comparison').fill('35');
+  await page.locator('#comparison').dispatchEvent('input');
+  assert.match(await page.locator('#reference-image').getAttribute('style'), /65%/);
+  await page.screenshot({ path: 'verification/comparison.png', fullPage: true });
+  await page.locator('#compare').click();
+  await page.locator('#animate').click();
+  const before = await page.evaluate(() => window.shadowStudy.state.azimuth);
+  await page.waitForTimeout(1100);
+  const after = await page.evaluate(() => window.shadowStudy.state.azimuth);
+  assert.notEqual(before, after, 'Animation must move the sun');
+  await page.locator('#animate').click();
+  await page.locator('#reset').click();
+  const downloadPromise = page.waitForEvent('download');
+  await page.locator('#export').click();
+  const download = await downloadPromise;
+  assert.match(download.suggestedFilename(), /isometric-light.*\.png$/);
+  await download.saveAs('verification/exported-frame.png');
+  const info = await page.evaluate(() => window.shadowStudy.getInfo());
+  assert.equal(info.three, '180');
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.screenshot({ path: 'verification/mobile.png', fullPage: true });
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, 'Mobile layout must fit the viewport');
+  assert.equal(await page.locator('#shadows').isVisible(), true);
+  assert.deepEqual(errors, [], 'No JS, WebGL shader, or resource errors');
+  const report = { status: 'passed', baseURL, browser: await browser.version(), info, tests: ['scene loads', 'shadow toggle changes pixels', 'sun direction changes pixels', 'five render views', 'soft shadows differ from hard', 'range controls', 'reset', 'reference slider', 'sun animation', 'PNG export', 'mobile fits', 'no console errors'], errors };
+  await writeFile('verification/browser-report.json', JSON.stringify(report, null, 2));
+  console.log(JSON.stringify(report, null, 2));
+} finally {
+  await browser.close();
+}

@@ -1,0 +1,36 @@
+Finish TASK.md Model-G - token and time usage
+Thread: 01a14af9-24f0-7970-8e7c-3c24fee91bf7
+Exported: 2026-10-18T03:26:16+08:00
+Timezone: Asia/Shanghai
+
+Elapsed time: 16m 6.406s
+Started: 2026-10-18T01:46:50.864+08:00
+Completed: 2026-10-18T02:02:57.269+08:00
+
+Scope                             Input       Cached input       Output     Reasoning         Total     Sum of turn times
+Main chat                       4,773,818          4,651,136       41,889        12,958     4,815,707     16m 6.406s
+Delegated agents (3)           11,674,569         11,336,192       76,621        29,130    11,751,190     31m 44.016s
+Main + delegated agents        16,448,387         15,987,328      118,510        42,088    16,566,897     47m 50.422s
+Automatic review (1)               20,430              6,144          330           260        20,760     0m 3.792s
+All recorded activity          16,468,817         15,993,472      118,840        42,348    16,587,657     47m 54.214s
+
+Per-thread totals:
+  /root: 4,815,707 tokens; 16m 6.406s; 1 completed turn(s)
+  /root/shadow_research: 4,321,578 tokens; 6m 27.847s; 3 completed turn(s)
+  /root/scene_analysis: 3,844,975 tokens; 13m 1.072s; 1 completed turn(s)
+  automatic_review: 20,760 tokens; 0m 3.792s; 1 completed turn(s)
+  /root/blender_pipeline: 3,584,637 tokens; 12m 15.097s; 1 completed turn(s)
+
+Notes:
+- Cached input is a subset of input; reasoning is a subset of output.
+- Total tokens = input + output. Cached and reasoning subsets are not added again.
+- Agent turn times overlap. Their sum is not the elapsed completion time.
+- Research-agent idle gaps between its three turns are excluded from active time.
+- Duplicate cumulative usage snapshots and inherited parent starts are excluded.
+- Automatic review usage is reported separately from the main chat and delegated work.
+- Usage from this export chat is excluded.
+- This export contains recorded usage, not a monetary cost estimate.
+
+Source: local Codex session JSONL records; main timing cross-checked with read_thread.
+JSON includes per-turn details, source paths, source hashes, and accounting definitions.
+Field reference: https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/subagents/subresources/turns/methods/retrieve
